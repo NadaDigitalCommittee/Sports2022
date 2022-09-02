@@ -7,7 +7,7 @@ export default {
 
   // HTMLのヘッダ
   head: {
-    title: 'ねこ',
+    title: '2022年灘校体育祭',
     htmlAttrs: {
       lang: 'en',
     },
@@ -31,8 +31,6 @@ export default {
 
   // プラグイン一覧
   plugins: [
-    // スピナーのプラグイン。ssr: falseでサーバーサイドレンダリングを無効化する
-    { src: '@/plugins/spinner', ssr: false },
   ],
 
   // コンポーネントを自動インポートする
@@ -40,7 +38,7 @@ export default {
 
   router: {
     // Github Pages のURLでうまく動くように
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/FrontendSample/' : '/',
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/Sports2022/' : '/',
     // 存在しないページすべてを404ページにリダイレクトする
     extendRoutes(routes, resolve) {
       routes.push({
@@ -61,8 +59,6 @@ export default {
   modules: [
     // Nuxt Content
     '@nuxt/content',
-    // Axios
-    '@nuxtjs/axios',
     // グローバルなSass変数とMixin
     '@nuxtjs/style-resources',
   ],

@@ -1,5 +1,4 @@
-# Frontend Sample
-Nuxt.jsの講義用サンプルプロジェクトです。
+# 2022年体育祭用Webサイト
 
 ## 環境セットアップ
 1. Node.jsをインストールします。(「Node.js インストール」でググりましょう。)
@@ -59,12 +58,6 @@ CSSや画像、フォントなど
 ## 主な依存パッケージ
 ### `@nuxtjs/nuxt-content`
 文章やデータなどのコンテンツを管理する
-
-### `@nuxtjs/axios`
-HTTP通信に使う
-
-### `vue-simple-spinner`
-ロード中のスピナー
 
 ### `sass`, `sass-loader`
 [Sass](https://sass-lang.com)を使えるようにする

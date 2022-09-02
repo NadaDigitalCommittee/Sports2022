@@ -1,7 +1,6 @@
 <!-- サンプルアプリケーション -->
 <template>
   <CardContainer>
-    <CatImage />
   </CardContainer>
 </template>
 
