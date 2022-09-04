@@ -84,6 +84,8 @@
   margin-bottom: 30px;
 }
 .news{
+    display: flex;
+    justify-content: center;
   table{
     width: calc( min(100vw,800px) + 10px);
     position: relative;
