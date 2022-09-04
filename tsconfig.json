@@ -27,7 +27,6 @@
     "types": [
       "@nuxt/types",
       "@nuxt/content", // Nuxt Content用拡張
-      "@nuxtjs/axios", // Axios用拡張
       "@types/node"
     ]
   },

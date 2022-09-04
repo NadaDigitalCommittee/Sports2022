@@ -8,8 +8,10 @@
     </div>
     <!-- フッター -->
     <footer :class="$style.footer">
-      <p>© 2022 灘校デジタル委員会</p>
-      <nuxt-link to="/">Top</nuxt-link>
+      <div :class="$style.names">
+        <p :class = "$style.name">93rd Nada Sports Fest</p>
+        <p :class="$style.copyright">©︎Copyright 2022 Digital Division</p>
+      </div>
     </footer>
   </div>
 </template>
@@ -35,9 +37,6 @@ export default Vue.extend({
 .main {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
 }
 
 .footer {
@@ -49,10 +48,23 @@ export default Vue.extend({
   color: $color-text-dimmed;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
+  background-color: #45485a;
   a {
     color: inherit;
   }
+}
+
+.names {
+  p{
+  text-align: center;
+  color: #FFFFFF;
+  }
+}
+.name{
+  font-size: 15px;
+}
+.copyright{
+  font-size: 7px;
 }
 </style>
 <!-- CSS Modulesを無効化したSCSS -->
