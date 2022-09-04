@@ -2,7 +2,7 @@
   <div class="bg">
     <Header/>
     <div class="theme">
-      <img id="1" src="~/static/logo.png"  alt="開拓する"/>
+      <img id="1" src="~/assets/img/logo.png"  alt="開拓する"/>
     </div>
     <div class="timer">
       <b class = "made">第93回灘校体育祭まで</b>
@@ -41,7 +41,7 @@
               2000/01/01
             </th>
             <td>
-              Lorem ipsum dolor 
+              Lorem ipsum dolor
             </td>
           </tr>
         </tbody>
@@ -51,7 +51,6 @@
 </template>
 
 <style lang="scss">
-@import url("https://use.typekit.net/fge6cqc.css");
 .theme{
   text-align: center;
   padding: 3.5% 0;
@@ -71,7 +70,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  font-size: 24px; 
+  font-size: 24px;
   p{
     margin: 0 20px;
   }
@@ -92,7 +91,7 @@
     left: -5px;
     thead{
       width: min(100vw,800px);
-      
+
       tr{
         background-color: #FF4E00;
         td{
@@ -128,21 +127,20 @@
 
 </style>
 
-
 <script>
 import Vue from 'vue';
+
 export default Vue.extend({
-  name:'Index',
-  data(){
-    return{
-      day:'',
-    }
+  name: 'Index',
+  data() {
+    return {
+      day: '',
+    };
   },
   mounted() {
-    var target = new Date(2022,8,25);
-    var date = new Date();
-    this.day = Math.floor((target-date)/86400000)
-  }
+    const target = new Date(2022, 8, 25);
+    const date = new Date();
+    this.day = Math.floor((target - date) / 86400000);
+  },
 });
 </script>
-

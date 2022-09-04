@@ -11,9 +11,9 @@
 </style>
 
 <script lang="ts">
-    import Vue from 'vue';
-    
-    export default Vue.extend({
-      name: 'Header',
-    });
+import Vue from 'vue';
+
+export default Vue.extend({
+  name: 'Header',
+});
 </script>
