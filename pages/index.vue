@@ -2,7 +2,7 @@
   <div class="bg">
     <Header/>
     <div class="theme">
-      <img id="1" src="/logo.png"  alt="開拓する"/>
+      <img id="1" src="~/static/logo.png"  alt="開拓する"/>
     </div>
     <div class="timer">
       <b class = "made">第93回灘校体育祭まで</b>
