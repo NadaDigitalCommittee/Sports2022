@@ -2,9 +2,9 @@
   <div class="bg">
     <Header/>
     <div class="theme">
-      <img id="1" src="~/assets/img/logo.png"  alt="開拓する"/>
+      <img id="1" src="~/assets/img/logo.png"  alt="体育祭テーマロゴ"/>
     </div>
-    <div class="timer">
+    <div class="timer" v-bind:class="{show:active}">
       <b class = "made">第93回灘校体育祭まで</b>
       <div class="ato">
         <p>あと</p><p id = "daycount">{{ day }}</p><p>日</p>
@@ -47,6 +47,14 @@
         </tbody>
       </table>
     </div>
+    <div class="speech">
+      <div class="vision">
+        <img src="~/assets/img/vision.png" alt="vision">
+      </div>
+      <div class="concept">
+        <img src="~/assets/img/concept.png" alt="concept">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -58,9 +66,23 @@
   img{
     width: min(90%,400px);
   }
+  
 }
 .timer{
+  position: relative;
+  top: 40px;
   text-align: center;
+  -webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
+	opacity: 0;
+}
+
+.show {
+  top:0px;
+	opacity: 1;
 }
 .made{
   font-size:28px;
@@ -125,6 +147,21 @@
   }
 }
 
+.speech{
+  margin-top: 50px;
+  .vision{
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: left;
+    width: min(100vw,max(70vw,600px));
+  }
+  .concept{
+    margin: auto;
+    text-align: left;
+    width: min(100vw,max(70vw,600px));
+    margin-bottom: 50px;
+  }
+}
 </style>
 
 <script>
@@ -135,12 +172,19 @@ export default Vue.extend({
   data() {
     return {
       day: '',
+      active:false,
     };
   },
   mounted() {
     const target = new Date(2022, 8, 25);
     const date = new Date();
     this.day = Math.floor((target - date) / 86400000);
+    setTimeout(() => {
+      this.active = true;
+    }, 1000);
+  },
+  methods:{
+
   },
 });
 </script>

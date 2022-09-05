@@ -1,3 +1,8 @@
+let dir = '/favicon.png';
+if (process.env.DEPLOY_ENV === 'GH_PAGES') {
+  dir = '/Sports2022/favicon.png';
+}
+
 export default {
   // 静的サイトとして生成する
   target: 'static',
@@ -18,7 +23,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' },
+      { rel: 'icon', type: 'image/png', href: dir },
       {rel: 'stylesheet',href: "https://use.typekit.net/fge6cqc.css"}
     ],
   },
