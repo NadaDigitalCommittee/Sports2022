@@ -66,23 +66,23 @@
   img{
     width: min(90%,400px);
   }
-  
+
 }
 .timer{
   position: relative;
   top: 40px;
   text-align: center;
   -webkit-transition: all 2s;
-	-moz-transition: all 2s;
-	-ms-transition: all 2s;
-	-o-transition: all 2s;
-	transition: all 2s;
-	opacity: 0;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  opacity: 0;
 }
 
 .show {
   top:0px;
-	opacity: 1;
+  opacity: 1;
 }
 .made{
   font-size:28px;
@@ -172,7 +172,7 @@ export default Vue.extend({
   data() {
     return {
       day: '',
-      active:false,
+      active: false,
     };
   },
   mounted() {
@@ -183,7 +183,7 @@ export default Vue.extend({
       this.active = true;
     }, 1000);
   },
-  methods:{
+  methods: {
 
   },
 });

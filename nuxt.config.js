@@ -24,7 +24,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: dir },
-      {rel: 'stylesheet',href: "https://use.typekit.net/fge6cqc.css"}
+      { rel: 'stylesheet', href: 'https://use.typekit.net/fge6cqc.css' },
     ],
   },
 
