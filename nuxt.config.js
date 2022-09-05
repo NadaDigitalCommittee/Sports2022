@@ -1,6 +1,6 @@
-let dir = '/favicon.ico';
+let dir = '/favicon.png';
 if (process.env.DEPLOY_ENV === 'GH_PAGES') {
-  dir = '/Sports2022/favicon.ico';
+  dir = '/Sports2022/favicon.png';
 }
 
 export default {
