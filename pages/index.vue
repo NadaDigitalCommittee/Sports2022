@@ -224,7 +224,7 @@
       font-size:24px;
       margin-left: 18px;
     }
-    
+
     .pl{
       background-color: $maincolor;
     }
