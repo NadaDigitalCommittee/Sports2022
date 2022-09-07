@@ -296,8 +296,10 @@
 .aisatu{
   font-size: 16px;
   margin: auto;
+  padding-right: 15px;
+  padding-left:15px;
   text-align: center;
-  width: min(100vw,max(50% , 600px));
+  width: calc( min(100vw,max(50% , 600px)) - 30px);
 }
 </style>
 
