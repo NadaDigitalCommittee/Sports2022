@@ -249,7 +249,7 @@
     .role{
       position: relative;
       font-size:24px;
-      margin-left: 18px;
+      margin-left: 10px;
       z-index: 3;
     }
     .pl{
@@ -261,18 +261,26 @@
     .name{
       position: relative;
       z-index: 3;
-      margin-left: 40px;
-      font-size:32px;
+      margin-left: 45px;
+      font-size:30px;
     }
   }
   .profile{
     margin: auto;
+    margin-top:15px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
+    font-family: source-han-serif-japanese, serif;
+    font-weight: 900;
     width: min(100vw,max(50% , 600px));
     img{
       border-radius:50% ;
       border-width: 3px;
+    }
+    .names{
+      margin-left: 20px;
+      margin-top: 15px;
     }
   }
 }
@@ -282,7 +290,7 @@
   height: 15px;
   width:168px;
   clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .pl2{
   position: relative;
@@ -291,10 +299,11 @@
   height: 20px;
   width:172px;
   clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .aisatu{
   font-size: 16px;
+  font-family: sans-serif;
   margin: auto;
   padding-right: 15px;
   padding-left:15px;
@@ -333,9 +342,18 @@ export default Vue.extend({
       this.ActivateTime = true;
       this.ActivateKaitaku2 = true;
     }, 1500);
+    //font読み込み
+    var d = document;
+    var config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   },
   methods: {
-
+    
   },
 });
 </script>
+

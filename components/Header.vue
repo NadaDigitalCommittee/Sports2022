@@ -1,16 +1,28 @@
 <template>
     <div>
     <div class="header">
-        <b>第93回灘校体育祭</b>
+        <p>第93回灘校体育祭</p>
         <div class="hb" v-on:click="hbClick">
             <img :src="imgsrc" alt="">
         </div>
     </div>
-    <div class="blank">
-
-    </div>
+    <div class="blank"></div>
     <div class="menu" :class="{ActivateMenu:MenuOpened}">
-
+      <div class="link">
+        <nuxt-link to="/">トップページ</nuxt-link>
+      </div>
+      <div class="link">
+        <nuxt-link to="/programs">プログラム</nuxt-link>
+      </div>
+      <div class="link">
+        <nuxt-link to="/points">競技得点</nuxt-link>
+      </div>
+      <div class="link">
+        <nuxt-link to="/topics">記事特集</nuxt-link>
+      </div>
+      <div class="link">
+        <nuxt-link to="/news">過去の情報</nuxt-link>
+      </div>
     </div>
     </div>
 </template>
@@ -22,12 +34,15 @@
     width: 100vw;
     background-color: #FFFFFF;
     z-index: 1000;
-    font-size:20px;
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     display: flex;
+    font-size: 20px;
     align-items: center;
     border-color: $maincolor;
     border-bottom-width: 1px;
-    b{
+    p{
         position: absolute;
         left: calc( max( 0px , calc( 15vw - 50px )) + 10px);
     }
@@ -41,10 +56,11 @@
 }
 .menu{
   position: fixed;
+  top:100px;
   z-index: 999;
   background-color: #FFFFFF;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 100px);
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s;
@@ -56,6 +72,17 @@
 .ActivateMenu{
     pointer-events: all;
     opacity: 1;
+}
+
+.link{
+  color:$maincolor;
+  border-bottom-width: 1px;
+  margin: 0 10vw;
+  padding: 3vh 10vw;
+  border-color: #0000004a;
+  font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 </style>
 
@@ -69,6 +96,17 @@ export default Vue.extend({
       MenuOpened:false,
       imgsrc:require("~/assets/img/menuclosed.png"),
     };
+  },
+  mounted(){
+    //font
+    var d = document
+    var config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  
   },
   methods:{
     hbClick(){
