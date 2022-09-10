@@ -115,7 +115,8 @@
   text-align: center;
 }
 .hidden{
-  -webkit-transition: all 0.5s;
+  -webkit-transition: transform all 0.5s;
+  -webkit-transition: -webkit-transform all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -310,6 +311,7 @@
   text-align: center;
   width: calc( min(100vw,max(50% , 600px)) - 30px);
 }
+
 </style>
 
 <script>
