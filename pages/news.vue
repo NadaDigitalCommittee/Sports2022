@@ -9,15 +9,15 @@
 </style>
 
 <script lang="ts">
-    import Vue from 'vue';
-    
-    export default Vue.extend({
-      name: 'news',
-      data(){
-        return{
-        };
-      },
-      methods:{
-      }
-    });
+import Vue from 'vue';
+
+export default Vue.extend({
+  name: 'news',
+  data() {
+    return {
+    };
+  },
+  methods: {
+  },
+});
 </script>
