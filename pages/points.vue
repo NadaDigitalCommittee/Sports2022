@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header/>
-        <p v-for="point in points" :key="point">{{point}}</p>
+        <p v-for="point in points" :key="point">{{point.id}}</p>
         <div class="aqua" @click = 'request'>request</div>
     </div>
 </template>
@@ -25,6 +25,7 @@ export default Vue.extend({
   },
   methods: {
     async request(){
+      // @ts-ignore
       this.points = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/score',{headers: { "Content-Type": "application/json" },
     data: {}}));
     },
