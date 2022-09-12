@@ -22,7 +22,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:site_name', property: 'og:site_name', content: '第93回灘校体育祭「拓」公式ウェブサイト' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:image',property:'og:image',content:prefix+dir},
+      { hid: 'og:image',property:'og:image',content:'https://sports.nada-sc.jp/2022/favicon.png'},
       
       { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
       { hid: 'twitter:site', property: 'twitter:site', content: '@Nada_festival' },

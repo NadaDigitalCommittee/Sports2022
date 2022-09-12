@@ -338,9 +338,7 @@ export default Vue.extend({
   },
   head(){
     let url = 'https://sports.nada-sc.jp/2022/';
-    if (process.env.DEPLOY_ENV === 'GH_PAGES') {
-      url = 'https://nadadigitalcommittee.github.io/';
-    }
+    
     return{
       title:'トップページ - 第93回灘校体育祭「拓」',
       meta:[
