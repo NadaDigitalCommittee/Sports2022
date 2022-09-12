@@ -49,6 +49,10 @@
     .hb{
         position: absolute;
         right: calc( max( 0px , calc( 15vw - 50px )) + 10px);
+        img{
+          width: 37px;
+          height:20px;
+        }
     }
 }
 .blank{

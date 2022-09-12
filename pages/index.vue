@@ -2,7 +2,7 @@
   <div class="bg">
     <Header/>
     <div class="theme">
-      <img id="id1" src="~/assets/img/theme.png"  alt="体育祭テーマロゴ"/>
+      <img id="id1" src="~/assets/img/fixedlogo.png"  alt="体育祭テーマロゴ"/>
       <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.png"  alt="新たな体育祭を"/>
       <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.png"  alt="開拓する"/>
     </div>
@@ -51,7 +51,7 @@
     </div>
     <div class="speech">
       <div class="vision">
-        <img src="~/assets/img/vision.png" alt="vision">
+        <img src="~/assets/img/vision.png" alt="vision" class="midasi">
         <div class="profile">
           <img src="~/assets/img/ikeda.png" alt="体育委員長の顔写真" class="face">
           <div class="names">
@@ -64,7 +64,7 @@
         <p class="aisatu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos nostrum cumque recusandae earum, sunt, saepe similique ipsam culpa exercitationem ex, placeat obcaecati iste! Hic voluptatem magni illum minus culpa?</p>
       </div>
       <div class="concept">
-        <img src="~/assets/img/concept.png" alt="concept">
+        <img src="~/assets/img/concept.png" alt="concept" class="midasi">
         <div class="profile">
           <img src="~/assets/img/josuke.png" alt="デザイン課長の顔写真" class="face">
           <div class="names">
@@ -90,6 +90,8 @@
 #id1{
   position: relative;
   left: calc( 50vw - 175px );
+  width:349px;
+  height: 337px;
   resize: none;
 }
 #id2{
@@ -208,6 +210,10 @@
 
 .speech{
   margin-top: 50px;
+  
+  .midasi{
+    height: 50px;
+  }
   .vision{
     p{
       z-index: 2;
@@ -225,7 +231,6 @@
       font-size:24px;
       margin-left: 18px;
     }
-
     .pl{
       background-color: $maincolor;
     }
@@ -278,6 +283,8 @@
     img{
       border-radius:50% ;
       border-width: 3px;
+      width: 120px;
+      height: 120px;
     }
     .names{
       margin-left: 20px;
@@ -330,7 +337,7 @@ export default Vue.extend({
     };
   },
   mounted() {
-    const target = new Date(2022, 8, 25);
+    const target = new Date(2022, 8, 26);
     const date = new Date();
     this.day = Math.floor((target - date) / 86400000);
     setTimeout(() => {
