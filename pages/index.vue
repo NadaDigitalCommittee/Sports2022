@@ -336,6 +336,20 @@ export default Vue.extend({
       ActivateKaitaku2: false,
     };
   },
+  head(){
+    let url = 'https://sports.nada-sc.jp/2022/';
+    if (process.env.DEPLOY_ENV === 'GH_PAGES') {
+      url = 'https://nadadigitalcommittee.github.io/';
+    }
+    return{
+      title:'トップページ - 第93回灘校体育祭「拓」',
+      meta:[
+      { hid: 'description',name:'description',content:'2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。'},
+      { hid: 'og:description',name:'og:description',content:'2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。'},
+      { hid: 'og:url', name:'og:url',content:url}  
+      ],
+    }
+  },
   mounted() {
     const target = new Date(2022, 8, 26);
     const date = new Date();

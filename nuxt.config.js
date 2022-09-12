@@ -1,8 +1,9 @@
 let dir = '/favicon.png';
+let prefix = 'https://sports.nada-sc.jp/2022';
 if (process.env.DEPLOY_ENV === 'GH_PAGES') {
   dir = '/Sports2022/favicon.png';
+  prefix = 'https://nadadigitalcommittee.github.io';
 }
-
 export default {
   // 静的サイトとして生成する
   target: 'static',
@@ -12,14 +13,21 @@ export default {
 
   // HTMLのヘッダ
   head: {
-    title: '2022年灘校体育祭',
+    title: '第93回灘校体育祭「拓」',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'og:site_name', property: 'og:site_name', content: '第93回灘校体育祭「拓」公式ウェブサイト' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image',property:'og:image',content:prefix+dir},
+      
+      { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:site', property: 'twitter:site', content: '@Nada_festival' },
+      { hid: 'twitter:player', property: 'twitter:player', content: '@Nada_festival' },
+      
       { name: 'format-detection', content: 'telephone=no' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
     ],
