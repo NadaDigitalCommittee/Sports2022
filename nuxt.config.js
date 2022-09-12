@@ -68,6 +68,7 @@ export default {
     '@nuxt/content',
     // グローバルなSass変数とMixin
     '@nuxtjs/style-resources',
+    '@nuxtjs/axios',
   ],
 
   // Nuxt Contentの設定

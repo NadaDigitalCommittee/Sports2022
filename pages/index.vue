@@ -6,7 +6,7 @@
       <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.png"  alt="新たな体育祭を"/>
       <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.png"  alt="開拓する"/>
     </div>
-    <div class="timer hidden" v-bind:class="{show:ActivateTime}">
+    <div class="timer hidden" :class="{show:ActivateTime}">
       <b class = "made">第93回灘校体育祭まで</b>
       <div class="ato">
         <p>あと</p><p id = "daycount">{{ day }}</p><p>日</p>
@@ -80,7 +80,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .theme{
   padding: 5vh 0;
   width: 100vw;
