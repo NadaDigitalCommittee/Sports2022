@@ -117,12 +117,12 @@
   text-align: center;
 }
 .hidden{
-  -webkit-transition: transform all 0.5s;
-  -webkit-transition: -webkit-transform all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: transform all 1.25s;
+  -webkit-transition: -webkit-transform all 1.25s;
+  -moz-transition: all 1.25s;
+  -ms-transition: all 1.25s;
+  -o-transition: all 1.25s;
+  transition: all 1.25s;
   opacity: 0;
 }
 .show {
@@ -354,15 +354,15 @@ export default Vue.extend({
     this.day = Math.floor((target - date) / 86400000);
     setTimeout(() => {
       this.ActivateAratana = true;
-    }, 500);
+    }, 1000);
     setTimeout(() => {
       this.ActivateKaitaku = true;
       this.ActivateAratana2 = true;
-    }, 1000);
+    }, 2250);
     setTimeout(() => {
       this.ActivateTime = true;
       this.ActivateKaitaku2 = true;
-    }, 1500);
+    }, 3500);
     // font読み込み
     const d = document;
     const config = {
