@@ -1,7 +1,7 @@
 <!-- 404の時に表示する -->
 <template>
   <div>
-    
+
   </div>
 </template>
 

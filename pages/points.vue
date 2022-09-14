@@ -20,26 +20,28 @@ export default Vue.extend({
   name: 'points',
   data() {
     return {
-      points:[],
+      points: [],
     };
   },
-  head(){
-    let url = 'https://sports.nada-sc.jp/2022/';
-    
-    return{
-      title:'競技得点 - 第93回灘校体育祭「拓」',
-      meta:[
-      { hid: 'description',name:'description',content:'2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。'},
-      { hid: 'og:description',name:'og:description',content:'2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。'},
-      { hid: 'og:url', name:'og:url',content:url+'points'}  
+  head() {
+    const url = 'https://sports.nada-sc.jp/2022/';
+
+    return {
+      title: '競技得点 - 第93回灘校体育祭「拓」',
+      meta: [
+        { hid: 'description', name: 'description', content: '2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。' },
+        { hid: 'og:description', name: 'og:description', content: '2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。' },
+        { hid: 'og:url', name: 'og:url', content: `${url}points` },
       ],
-    }
+    };
   },
   methods: {
-    async request(){
+    async request() {
       // @ts-ignore
-      this.points = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/score',{headers: { "Content-Type": "application/json" },
-    data: {}}));
+      this.points = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/score', {
+        headers: { 'Content-Type': 'application/json' },
+        data: {},
+      }));
     },
   },
 });
