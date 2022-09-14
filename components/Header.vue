@@ -18,7 +18,7 @@
         <nuxt-link to="/points">競技得点</nuxt-link>
       </div>
       <div class="link">
-        <nuxt-link to="/topics">記事特集</nuxt-link>
+        <nuxt-link to="/articles">記事特集</nuxt-link>
       </div>
       <div class="link">
         <nuxt-link to="/news">過去の情報</nuxt-link>
@@ -60,11 +60,11 @@
 }
 .menu{
   position: fixed;
-  top:100px;
+  top:max(50px,10vh);
   z-index: 999;
   background-color: #FFFFFF;
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - max(50px,10vh));
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s;
