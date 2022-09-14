@@ -10,7 +10,7 @@
     <footer :class="$style.footer">
       <div :class="$style.names">
         <p :class = "$style.name">93rd Nada Sports Fest</p>
-        <p :class="$style.copyright">©︎Copyright 2022 Digital Division</p>
+        <p :class="$style.copyright">©︎Copyright 2022 Digital Committee</p>
       </div>
     </footer>
   </div>
