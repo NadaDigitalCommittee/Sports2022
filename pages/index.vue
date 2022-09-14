@@ -89,25 +89,25 @@
 
 #id1{
   position: relative;
-  left: calc( 50vw - 175px );
-  width:349px;
-  height: 337px;
+  left: calc( 50vw - ( 40vh * 175 / 337 ) );
+  width: calc( 40vh * 349 / 337);
+  height: 40vh;
   resize: none;
 }
 #id2{
   position: relative;
-  left: calc(50vw - 175px  - 60px);
-  top: -30px;
-  width: 34px;
-  height: 305px;
+  left: calc(50vw - ( 40vh * 235 / 337 ));
+  top: calc( 0vh -  40vh * 30 / 337  );
+  width: calc( 40vh * 34 / 337);
+  height: calc( 40vh * 305 / 337);
   z-index: 1;
 }
 #id3{
   position: relative;
-  left: calc(50vw - 535px);
-  top:95px;
-  width: 34px;
-  height: 180px;
+  left: calc(50vw - ( 40vh * 535 / 337 ));
+  top: calc( 40vh * 95 / 337 );
+  width: calc( 40vh * 34 / 337 );
+  height: calc( 40vh * 180 / 337 );
   z-index: 1;
 }
 
@@ -130,11 +130,11 @@
   opacity: 1;
 }
 .show2{
-  top:10px !important;
+  top:calc( 40vh * 10 / 337 ) !important;
   opacity: 1;
 }
 .show3{
-  top:135px !important;
+  top:calc( 40vh * 135 / 337 ) !important;
   opacity: 1;
 }
 .disableanime{
@@ -146,20 +146,20 @@
 }
 
 .made{
-  font-size:28px;
+  font-size: min(28px , 3vh);
 }
 .ato{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  font-size: 24px;
+  font-size: min(24px , 2.5vh);
   p{
     margin: 0 20px;
   }
   #daycount{
     font-family: cheap-pine,sans-serif;
-    font-size: 120px;
+    font-size: min(120px , 12.5vh);
     color: #FF4E00;
     font-style: normal;
   }

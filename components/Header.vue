@@ -30,7 +30,7 @@
 <style  lang = "scss" scoped>
 .header{
     position: fixed;
-    height: 100px;
+    height: max(50px,10vh);
     width: 100vw;
     background-color: #FFFFFF;
     z-index: 1000;
@@ -56,7 +56,7 @@
     }
 }
 .blank{
-    height: 100px;
+    height: max(50px,10vh);
 }
 .menu{
   position: fixed;
