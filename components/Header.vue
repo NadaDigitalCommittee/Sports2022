@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="header">
-        <p>第93回灘校体育祭</p>
+        <p @click="$router.push('/')">第93回灘校体育祭</p>
         <div class="hb" v-on:click="hbClick">
             <img :src="imgsrc" alt="">
         </div>
@@ -45,6 +45,7 @@
     p{
         position: absolute;
         left: calc( max( 0px , calc( 15vw - 50px )) + 10px);
+        cursor: pointer;
     }
     .hb{
         position: absolute;
@@ -53,6 +54,7 @@
           width: 37px;
           height:20px;
         }
+        cursor: pointer;
     }
 }
 .blank{
