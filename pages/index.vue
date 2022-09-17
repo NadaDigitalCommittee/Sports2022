@@ -53,7 +53,7 @@
       <div class="vision">
         <img src="~/assets/img/vision.png" alt="vision" class="midasi">
         <div class="profile">
-          <img src="~/assets/img/ikeda.png" alt="体育委員長の顔写真" class="face">
+          <img src="~/assets/img/ikedafull.png" alt="体育委員長の写真" class="face">
           <div class="names">
             <p class="role">体育委員長</p>
             <div class="pl"/>
@@ -218,92 +218,69 @@
     margin-bottom: 50px;
     text-align: left;
     width: min(100vw,max(70vw,600px));
-    img{
-      border-color: $maincolor;
-    }
-    .role{
-      position: relative;
-      z-index: 3;
-      font-size:24px;
-      margin-left: 18px;
-    }
-    .pl{
-      background-color: $maincolor;
-    }
-    .pl2{
-      background-color: $maincolor;
-    }
-    .name{
-      position: relative;
-      z-index: 3;
-      margin-left: 40px;
-      font-size:32px;
-    }
-  }
-  .concept{
-    margin: auto;
-    text-align: left;
-    width: min(100vw,max(70vw,600px));
-    margin-bottom: 50px;
-    img{
-      border-color: $subcolor;
-    }
-    .role{
-      position: relative;
-      font-size:24px;
-      margin-left: 10px;
-      z-index: 3;
-    }
-    .pl{
-      background-color: $subcolor;
-    }
-    .pl2{
-      background-color: $subcolor;
-    }
-    .name{
-      position: relative;
-      z-index: 3;
-      margin-left: 45px;
-      font-size:30px;
-    }
-  }
-  .profile{
-    margin: auto;
+    
+    
+    .profile{
     margin-top:15px;
     margin-bottom: 25px;
+    margin: auto;
     display: flex;
     justify-content: center;
     font-family: source-han-serif-japanese, serif;
     font-weight: 900;
-    width: min(100vw,max(50% , 600px));
+    width: 375px;
+    height: 300px;
     img{
-      border-radius:50% ;
-      border-width: 3px;
-      width: 120px;
-      height: 120px;
+      position: absolute;
+      width: min(100vw,375px);
+      z-index: 1;
     }
     .names{
-      margin-left: 20px;
-      margin-top: 15px;
+      width: 375px;
+      height: 300px;
+      z-index: 2;
+      p{
+        color: #FFFFFF;
+        z-index: 3;
+      }
+      .role{
+        position: relative;
+        font-size:24px;
+        top:162px;
+        left: 159px;
+      }
+      .name{
+        position: relative;
+        font-size:30px;
+        top:150px;
+        left: 204px;
+      }
+      .pl{
+        background-color: $maincolor;
+        position: relative;
+        height: 30px;
+        width:168px;
+        clip-path: polygon(0% 0%,12% 100%,100% 100%,88% 0%);
+        opacity: 0.67;
+        z-index: 2;
+        top:135px;
+        left: 135px;
+      }
+      .pl2{
+        background-color: $maincolor;
+        position: relative;
+        height: 36px;
+        width:200px;
+        clip-path: polygon(0% 0%,12% 100%,100% 100%,88% 0%);
+        opacity: 0.67;
+        z-index: 2;
+        top:115px;
+        left: 162px;
+      }
     }
   }
-}
-.pl{
-  position: relative;
-  top: -12px;
-  height: 15px;
-  width:168px;
-  clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
-  opacity: 0.6;
-}
-.pl2{
-  position: relative;
-  top: -16px;
-  left: +20px;
-  height: 20px;
-  width:172px;
-  clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
-  opacity: 0.6;
+  }
+  
 }
 .aisatu{
   font-size: 16px;
