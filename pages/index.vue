@@ -61,7 +61,15 @@
             <div class="pl2"/>
           </div>
         </div>
-        <p class="aisatu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos nostrum cumque recusandae earum, sunt, saepe similique ipsam culpa exercitationem ex, placeat obcaecati iste! Hic voluptatem magni illum minus culpa?</p>
+        <p class="aisatu">パンデミックの発生によりこの2年半、校内外で受けた制約は計り知れません。直近2回の体育祭も短縮開催を余儀なくされ、いくつもの競技や企画が廃止となってしまいました。</p>
+        <br/>
+        <p class="aisatu">今年は、今年こそは、僕たちが憧れた体育祭を復興しよう、熱気を創り出そう、その一心でこれまで準備にあたって来ました。</p>
+        <br/>
+        <p class="aisatu">ただ一筋縄では行きません。生徒の経験不足により8枚の垂れ幕を諦め、人数が集まらなかった応援団は4クラスの合同となりました。絶たれた伝統を取り戻すことは難しい、その中でも残すものは残し、この時代に合った体育祭の形を模索し続けて来ました。この第93回体育祭が、灘校生に熱狂を生み、新時代の体育祭の先駆けとなれば、これ以上のことはありません。</p>
+        <br/>
+        <p class="aisatu">最後にはなりますが、体育科を始めとする教職員の方々、その他体育祭の開催に向けて尽力してくださった方々に感謝申し上げます。ありがとうございました。</p>
+        <br/><br/>
+        <p class="aisatu">伝統を託そう。未来を拓こう。</p>
       </div>
     </div>
   </div>
@@ -218,8 +226,7 @@
     margin-bottom: 50px;
     text-align: left;
     width: min(100vw,max(70vw,600px));
-    
-    
+
     .profile{
     margin-top:15px;
     margin-bottom: 25px;
@@ -280,7 +287,7 @@
     }
   }
   }
-  
+
 }
 .aisatu{
   font-size: 16px;
@@ -311,7 +318,6 @@ export default Vue.extend({
   },
   head() {
     const url = 'https://sports.nada-sc.jp/2022/';
-
     return {
       title: 'トップページ - 第93回灘校体育祭「拓」',
       meta: [
@@ -343,17 +349,43 @@ export default Vue.extend({
       scriptTimeout: 3000,
       async: true,
     };
-    let h = d.documentElement; let t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); let tk = d.createElement('script'); let f = false; let s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
+    let h = d.documentElement;
+    let t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout);
+    let tk = d.createElement('script');
+    let f = false;
+    let s = d.getElementsByTagName('script')[0];
+    let a;
+    h.className += ' wf-loading';
+    tk.src = `https://use.typekit.net/${config.kitId}.js`;
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function () {
+      a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try {
+        Typekit.load(config);
+      } catch (e) { }
+    };
+    s.parentNode.insertBefore(tk, s);
     // font
     config = {
       kitId: 'zlv1mor',
       scriptTimeout: 3000,
       async: true,
     };
-    h = d.documentElement; t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); tk = d.createElement('script'); f = false; s = d.getElementsByTagName('script')[0]; a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
+    h = d.documentElement;
+    t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout);
+    tk = d.createElement('script');
+    f = false;
+    s = d.getElementsByTagName('script')[0];
+    a;
+    h.className += ' wf-loading';
+    tk.src = `https://use.typekit.net/${config.kitId}.js`;
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function () {
+      a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try {
+        Typekit.load(config);
+      } catch (e) { }
+    };
+    s.parentNode.insertBefore(tk, s);
   },
-  methods: {
-
-  },
+  methods: {},
 });
 </script>
