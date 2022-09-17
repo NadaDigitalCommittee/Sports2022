@@ -6,25 +6,54 @@
           <img src="~/assets/img/articles.png" alt="articles" class="midasi">
           <div class="links">
             <div @click="$router.push('/article/lead')" class="link">
+              <p>体育委員会各課紹介</p>
+              <div class="inside">
               <p>引率課</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+              </div>
             </div>
             <div @click="$router.push('/article/judge')" class="link">
-              <p>審判課</p>
+              <p>体育委員会各課紹介</p>
+              <div class="inside">
+                <p>審判課</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+
+              </div>
             </div>
             <div @click="$router.push('/article/delivery')" class="link">
-              <p>運搬課</p>
+              <p>体育委員会各課紹介</p>
+              <div class="inside">
+                <p>運搬課</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+              </div>
             </div>
             <div @click="$router.push('/article/design')" class="link">
-              <p>デザイン課</p>
+              <p>体育委員会各課紹介</p>
+              <div class="inside">
+                <p>デザイン課</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+              </div>
             </div>
             <div @click="$router.push('/article/field')" class="link">
-              <p>フィールド課</p>
+              <p>体育委員会各課紹介</p>
+              <div class="inside">
+                <p>フィールド課</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+              </div>
             </div>
             <div @click="$router.push('/article/sumo')" class="link tokusyu">
-              <p>相撲特集</p>
+              <p>体育祭当日</p>
+              <div class="inside">
+                <p>相撲特集</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+              </div>
             </div>
             <div @click="$router.push('/article/cheer')" class="link tokusyu">
-              <p>応援団特集</p>
+              <p>体育祭当日</p>
+              <div class="inside">
+                <p>応援団特集</p>
+              <img src="~/assets/img/yajirusi.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -52,7 +81,23 @@
       width: calc(min(100vw,max(70vw,600px)) * 0.7);
       margin: 10px auto;
       background-color: #45485a;
-      
+      color:#FFFFFF;
+      font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 15px;
+      cursor:pointer;
+      p{
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+      .inside{
+        font-size: 25px;
+        display: flex;
+        img{
+          scale: 0.25;
+        }
+      }
     }
     .tokusyu{
       background-color: #FF4E00;
@@ -61,7 +106,7 @@
 }
 </style>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 
 export default Vue.extend({
@@ -81,6 +126,16 @@ export default Vue.extend({
         { hid: 'og:url', name: 'og:url', content: `${url}topics` },
       ],
     };
+  },
+  mounted() {
+    // font
+    const d = document;
+    const config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true,
+    };
+    const h = d.documentElement; const t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); const tk = d.createElement('script'); let f = false; const s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
   },
   methods: {
   },

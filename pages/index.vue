@@ -82,32 +82,33 @@
 
 <style scoped lang="scss">
 .theme{
-  padding: 5vh 0;
+  position: relative;
+  padding-bottom: 2vh;
   width: 100vw;
   display: flex;
 }
 
 #id1{
   position: relative;
-  left: calc( 50vw - ( 40vh * 175 / 337 ) );
-  width: calc( 40vh * 349 / 337);
-  height: 40vh;
+  left: calc( 50vw - ( 45vh * 175 / 337 ) );
+  width: calc( 45vh * 349 / 337);
+  height: 45vh;
   resize: none;
 }
 #id2{
   position: relative;
-  left: calc(50vw - ( 40vh * 235 / 337 ));
-  top: calc( 0vh -  40vh * 30 / 337  );
-  width: calc( 40vh * 34 / 337);
-  height: calc( 40vh * 305 / 337);
+  left: calc(50vw - ( 45vh * 235 / 337 ));
+  top: calc( 0vh -  45vh * 30 / 337  );
+  width: calc( 45vh * 34 / 337);
+  height: calc( 45vh * 305 / 337);
   z-index: 1;
 }
 #id3{
   position: relative;
-  left: calc(50vw - ( 40vh * 535 / 337 ));
-  top: calc( 40vh * 95 / 337 );
-  width: calc( 40vh * 34 / 337 );
-  height: calc( 40vh * 180 / 337 );
+  left: calc(50vw - ( 45vh * 535 / 337 ));
+  top: calc( 45vh * 95 / 337 );
+  width: calc( 45vh * 34 / 337 );
+  height: calc( 45vh * 180 / 337 );
   z-index: 1;
 }
 
@@ -146,22 +147,30 @@
 }
 
 .made{
-  font-size: min(28px , 3vh);
+  font-size: min(28px , 4.2vh);
+  
+  font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 .ato{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  font-size: min(24px , 2.5vh);
+  
+  font-size: min(24px , 4vh);
   p{
     margin: 0 20px;
+    position: relative;
+    top: -20px;
   }
   #daycount{
     font-family: cheap-pine,sans-serif;
-    font-size: min(120px , 12.5vh);
+    font-size: min(120px , 20vh);
     color: #FF4E00;
     font-style: normal;
+    top:0;
   }
   margin-bottom: 30px;
 }
@@ -365,12 +374,19 @@ export default Vue.extend({
     }, 3500);
     // font読み込み
     const d = document;
-    const config = {
+    var config = {
       kitId: 'zlv1mor',
       scriptTimeout: 3000,
       async: true,
     };
-    const h = d.documentElement; const t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); const tk = d.createElement('script'); let f = false; const s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
+    var h = d.documentElement; var t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); var tk = d.createElement('script'); var f = false; var s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
+    // font
+    config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true,
+    };
+    h = d.documentElement; t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); tk = d.createElement('script'); f = false; s = d.getElementsByTagName('script')[0];  a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
   },
   methods: {
 
