@@ -1,8 +1,6 @@
 let dir = '/favicon.png';
-let prefix = 'https://sports.nada-sc.jp/2022';
 if (process.env.DEPLOY_ENV === 'GH_PAGES') {
   dir = '/Sports2022/favicon.png';
-  prefix = 'https://nadadigitalcommittee.github.io';
 }
 export default {
   // 静的サイトとして生成する

@@ -1,7 +1,31 @@
 <template>
     <div>
         <Header/>
-        <div v-for="point in points" :key="point.id"><p>{{point.id}}{{point.name}}{{point.score1}}{{point.score2}}{{point.score3}}{{point.score4}}{{point.conceal}}</p></div>
+        <table v-for="point in points" :key="point.id">
+          <tr>
+            <td>
+              {{point.id}}
+            </td>
+            <td>
+              {{point.name}}
+            </td>
+            <td>
+              {{point.score1}}
+            </td>
+            <td>
+              {{point.score2}}
+            </td>
+            <td>
+              {{point.score3}}
+            </td>
+            <td>
+              {{point.score4}}
+            </td>
+            <td>
+              {{point.conceal}}
+            </td>
+          </tr>
+        </table>
         <div class="aqua" @click = 'request'>request</div>
     </div>
 </template>
