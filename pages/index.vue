@@ -63,19 +63,6 @@
         </div>
         <p class="aisatu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos nostrum cumque recusandae earum, sunt, saepe similique ipsam culpa exercitationem ex, placeat obcaecati iste! Hic voluptatem magni illum minus culpa?</p>
       </div>
-      <div class="concept">
-        <img src="~/assets/img/concept.png" alt="concept" class="midasi">
-        <div class="profile">
-          <img src="~/assets/img/josuke.png" alt="デザイン課長の顔写真" class="face">
-          <div class="names">
-            <p class="role">デザイン課長</p>
-            <div class="pl"/>
-            <p class="name">髙島晟輔</p>
-            <div class="pl2"/>
-          </div>
-        </div>
-        <p class="aisatu">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita inventore hic velit quos eius aliquam, rerum fugit pariatur reprehenderit voluptate nihil iusto veritatis est culpa quasi commodi aut! Dolorem, et!</p>
-      </div>
     </div>
   </div>
 </template>

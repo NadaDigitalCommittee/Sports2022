@@ -1,11 +1,10 @@
 <template>
-    <div>
-        <Header/>
-    </div>
+  <div class="bg">
+    <Header/>
+  </div>
 </template>
 
-<style>
-
+<style scoped lang="scss">
 </style>
 
 <script lang="ts">

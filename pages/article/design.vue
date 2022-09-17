@@ -3,9 +3,9 @@
       <Header/>
       <div class="speech">
         <div class="concept">
-          <img src="~/assets/img/forarticle/design.png" alt="concept" class="midasi">
+          <img src="~/assets/img/forarticle/design.png" alt="デザイン課" class="midasi">
           <div class="profile">
-            <img src="~/assets/img/josuke.png" alt="デザイン課長の顔写真" class="face">
+            <img src="~/assets/img/forarticle/josuke.png" alt="デザイン課長の顔写真" class="face">
             <div class="names">
               <p class="role">デザイン課長</p>
               <div class="pl"/>
