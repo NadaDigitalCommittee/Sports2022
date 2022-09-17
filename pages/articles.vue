@@ -75,7 +75,7 @@
   }
   .links{
     width: min(95vw,max(70vw,600px));
-    
+
     .link{
       height: 40vh;
       width: calc(min(100vw,max(70vw,600px)) * 0.7);

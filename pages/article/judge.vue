@@ -5,79 +5,79 @@
         <p class="title"><span class="iti">審</span>判課</p>
         <!-- 画像がない -->
         <div class="concept">
-         <div class="profile">
-          <img src="~/assets/img/josuke.png" alt="審判課長の顔写真" class="face">
-           <div class="names">
-           <p class="role">審判課長</p>
-           <div class="pl"/>
-           <p class="name">堀坂俊輔</p>
-           <div class="pl2"/>
-           </div>
-         </div> 
+          <div class="profile">
+            <img src="~/assets/img/josuke.png" alt="審判課長の顔写真" class="face">
+              <div class="names">
+                <p class="role">審判課長</p>
+                <div class="pl"/>
+                  <p class="name">堀坂俊輔</p>
+                <div class="pl2"/>
+              </div>
+          </div>
         </div>
         <p class="aisatu">ここに入力</p>
+        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
 .title{
- font-size: 50px;
- font-family: sans-serif;
- margin: auto;
- color: #000000
- .iti{
-  font-size: 40px;
+  font-size: 50px;
   font-family: sans-serif;
   margin: auto;
-  color: #FF4E00;
+  color: #000000;
+  .iti{
+    font-size: 40px;
+    font-family: sans-serif;
+    margin: auto;
+    color: #FF4E00;
   }
- } 
+}
 .concept{
-    margin: auto;
-    text-align: left;
-    width: min(100vw,max(70vw,600px));
-    margin-bottom: 50px;
-    img{
-      border-color: $subcolor;
-    }
-    .role{
-      position: relative;
-      font-size:24px;
-      margin-left: 10px;
-      z-index: 3;
-    }
-    .pl{
-      background-color: $subcolor;
-    }
-    .pl2{
-      background-color: $subcolor;
-    }
-    .name{
-      position: relative;
-      z-index: 3;
-      margin-left: 45px;
-      font-size:30px;
-    }
+  margin: auto;
+  text-align: left;
+  width: min(100vw,max(70vw,600px));
+  margin-bottom: 50px;
+  img{
+    border-color: $subcolor;
   }
-  .profile{
-    margin: auto;
-    margin-top:15px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    font-family: source-han-serif-japanese, serif;
-    font-weight: 900;
-    width: min(100vw,max(50% , 600px));
-    img{
-      border-radius:50% ;
-      border-width: 3px;
-      width: 120px;
-      height: 120px;
-    }
-    .names{
-      margin-left: 20px;
-      margin-top: 15px;
-    }
+  .role{
+    position: relative;
+    font-size:24px;
+    margin-left: 10px;
+    z-index: 3;
+  }
+  .pl{
+    background-color: $subcolor;
+  }
+  .pl2{
+    background-color: $subcolor;
+  }
+  .name{
+    position: relative;
+    z-index: 3;
+    margin-left: 45px;
+    font-size:30px;
+  }
+}
+.profile{
+  margin: auto;
+  margin-top:15px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  font-family: source-han-serif-japanese, serif;
+  font-weight: 900;
+  width: min(100vw,max(50% , 600px));
+  img{
+    border-radius:50% ;
+    border-width: 3px;
+    width: 120px;
+    height: 120px;
+  }
+  .names{
+    margin-left: 20px;
+    margin-top: 15px;
   }
 }
 .pl{
