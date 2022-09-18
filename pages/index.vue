@@ -253,12 +253,14 @@
       .role{
         position: relative;
         font-size:24px;
+        width: 140px;
         top:162px;
         left: 159px;
       }
       .name{
         position: relative;
         font-size:30px;
+        width: 140px;
         top:150px;
         left: 204px;
       }
