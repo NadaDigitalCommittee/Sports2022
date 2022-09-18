@@ -1,18 +1,17 @@
 <template>
-    <div>
-        <Header/>
-    </div>
+  <div class="bg">
+    <Header/>
+  </div>
 </template>
 
-<style>
-
+<style scoped lang="scss">
 </style>
 
 <script lang="ts">
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'news',
+  name: 'sumo',
   data() {
     return {
     };
@@ -21,11 +20,11 @@ export default Vue.extend({
     const url = 'https://sports.nada-sc.jp/2022/';
 
     return {
-      title: '過去の情報 - 第93回灘校体育祭「拓」',
+      title: '相撲特集 - 第93回灘校体育祭「拓」',
       meta: [
         { hid: 'description', name: 'description', content: '2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。' },
         { hid: 'og:description', name: 'og:description', content: '2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。' },
-        { hid: 'og:url', name: 'og:url', content: `${url}news` },
+        { hid: 'og:url', name: 'og:url', content: `${url}article/sumo` },
       ],
     };
   },

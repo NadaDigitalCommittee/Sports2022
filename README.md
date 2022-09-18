@@ -1,18 +1,18 @@
 # 2022年体育祭用Webサイト
 
 ## 環境セットアップ
-1. Node.jsをインストールします。(「Node.js インストール」でググりましょう。)
+1. Node.jsをインストールします。(「Node.js インストール」でググりましょう。) 最新のLTSを入れましょう!!!!!!!!!!!
 2. [Yarn](https://yarnpkg.com)をインストールします。
 ```shell
 $ npm -g install yarn
 ```
 3. プロジェクトをクローンします。
 ```shell
-$ git clone https://github.com/NadaDigitalCommittee/FrontendSample.git
+$ git clone https://github.com/NadaDigitalCommittee/Sports2022.git
 ```
 4. 依存するパッケージをインストールします。
 ```shell
-$ cd ./FrontendSample
+$ cd ./Sports2022
 $ yarn install
 ```
 

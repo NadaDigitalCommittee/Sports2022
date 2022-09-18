@@ -53,7 +53,7 @@
       <div class="vision">
         <img src="~/assets/img/vision.png" alt="vision" class="midasi">
         <div class="profile">
-          <img src="~/assets/img/ikeda.png" alt="体育委員長の顔写真" class="face">
+          <img src="~/assets/img/ikedafull.png" alt="体育委員長の写真" class="face">
           <div class="names">
             <p class="role">体育委員長</p>
             <div class="pl"/>
@@ -61,20 +61,15 @@
             <div class="pl2"/>
           </div>
         </div>
-        <p class="aisatu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos nostrum cumque recusandae earum, sunt, saepe similique ipsam culpa exercitationem ex, placeat obcaecati iste! Hic voluptatem magni illum minus culpa?</p>
-      </div>
-      <div class="concept">
-        <img src="~/assets/img/concept.png" alt="concept" class="midasi">
-        <div class="profile">
-          <img src="~/assets/img/josuke.png" alt="デザイン課長の顔写真" class="face">
-          <div class="names">
-            <p class="role">デザイン課長</p>
-            <div class="pl"/>
-            <p class="name">髙島晟輔</p>
-            <div class="pl2"/>
-          </div>
-        </div>
-        <p class="aisatu">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita inventore hic velit quos eius aliquam, rerum fugit pariatur reprehenderit voluptate nihil iusto veritatis est culpa quasi commodi aut! Dolorem, et!</p>
+        <p class="aisatu">パンデミックの発生によりこの2年半、校内外で受けた制約は計り知れません。直近2回の体育祭も短縮開催を余儀なくされ、いくつもの競技や企画が廃止となってしまいました。</p>
+        <br/>
+        <p class="aisatu">今年は、今年こそは、僕たちが憧れた体育祭を復興しよう、熱気を創り出そう、その一心でこれまで準備にあたって来ました。</p>
+        <br/>
+        <p class="aisatu">ただ一筋縄では行きません。生徒の経験不足により8枚の垂れ幕を諦め、人数が集まらなかった応援団は4クラスの合同となりました。絶たれた伝統を取り戻すことは難しい、その中でも残すものは残し、この時代に合った体育祭の形を模索し続けて来ました。この第93回体育祭が、灘校生に熱狂を生み、新時代の体育祭の先駆けとなれば、これ以上のことはありません。</p>
+        <br/>
+        <p class="aisatu">最後にはなりますが、体育科を始めとする教職員の方々、その他体育祭の開催に向けて尽力してくださった方々に感謝申し上げます。ありがとうございました。</p>
+        <br/><br/>
+        <p class="aisatu">伝統を託そう。未来を拓こう。</p>
       </div>
     </div>
   </div>
@@ -82,32 +77,33 @@
 
 <style scoped lang="scss">
 .theme{
-  padding: 5vh 0;
+  position: relative;
+  padding-bottom: 2vh;
   width: 100vw;
   display: flex;
 }
 
 #id1{
   position: relative;
-  left: calc( 50vw - 175px );
-  width:349px;
-  height: 337px;
+  left: calc( 50vw - ( 45vh * 175 / 337 ) );
+  width: calc( 45vh * 349 / 337);
+  height: 45vh;
   resize: none;
 }
 #id2{
   position: relative;
-  left: calc(50vw - 175px  - 60px);
-  top: -30px;
-  width: 34px;
-  height: 305px;
+  left: calc(50vw - ( 45vh * 235 / 337 ));
+  top: calc( 0vh -  45vh * 30 / 337  );
+  width: calc( 45vh * 34 / 337);
+  height: calc( 45vh * 305 / 337);
   z-index: 1;
 }
 #id3{
   position: relative;
-  left: calc(50vw - 535px);
-  top:95px;
-  width: 34px;
-  height: 180px;
+  left: calc(50vw - ( 45vh * 535 / 337 ));
+  top: calc( 45vh * 95 / 337 );
+  width: calc( 45vh * 34 / 337 );
+  height: calc( 45vh * 180 / 337 );
   z-index: 1;
 }
 
@@ -117,12 +113,12 @@
   text-align: center;
 }
 .hidden{
-  -webkit-transition: transform all 0.5s;
-  -webkit-transition: -webkit-transform all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: transform all 1.25s;
+  -webkit-transition: -webkit-transform all 1.25s;
+  -moz-transition: all 1.25s;
+  -ms-transition: all 1.25s;
+  -o-transition: all 1.25s;
+  transition: all 1.25s;
   opacity: 0;
 }
 .show {
@@ -130,11 +126,11 @@
   opacity: 1;
 }
 .show2{
-  top:10px !important;
+  top:calc( 40vh * 10 / 337 ) !important;
   opacity: 1;
 }
 .show3{
-  top:135px !important;
+  top:calc( 40vh * 135 / 337 ) !important;
   opacity: 1;
 }
 .disableanime{
@@ -146,22 +142,30 @@
 }
 
 .made{
-  font-size:28px;
+  font-size: min(28px , 4.2vh);
+
+  font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 .ato{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  font-size: 24px;
+
+  font-size: min(24px , 4vh);
   p{
     margin: 0 20px;
+    position: relative;
+    top: -20px;
   }
   #daycount{
     font-family: cheap-pine,sans-serif;
-    font-size: 120px;
+    font-size: min(120px , 20vh);
     color: #FF4E00;
     font-style: normal;
+    top:0;
   }
   margin-bottom: 30px;
 }
@@ -210,7 +214,7 @@
 
 .speech{
   margin-top: 50px;
-  
+  width: 100vw;
   .midasi{
     height: 50px;
   }
@@ -222,92 +226,70 @@
     margin-bottom: 50px;
     text-align: left;
     width: min(100vw,max(70vw,600px));
-    img{
-      border-color: $maincolor;
-    }
-    .role{
-      position: relative;
-      z-index: 3;
-      font-size:24px;
-      margin-left: 18px;
-    }
-    .pl{
-      background-color: $maincolor;
-    }
-    .pl2{
-      background-color: $maincolor;
-    }
-    .name{
-      position: relative;
-      z-index: 3;
-      margin-left: 40px;
-      font-size:32px;
-    }
-  }
-  .concept{
-    margin: auto;
-    text-align: left;
-    width: min(100vw,max(70vw,600px));
-    margin-bottom: 50px;
-    img{
-      border-color: $subcolor;
-    }
-    .role{
-      position: relative;
-      font-size:24px;
-      margin-left: 10px;
-      z-index: 3;
-    }
-    .pl{
-      background-color: $subcolor;
-    }
-    .pl2{
-      background-color: $subcolor;
-    }
-    .name{
-      position: relative;
-      z-index: 3;
-      margin-left: 45px;
-      font-size:30px;
-    }
-  }
-  .profile{
-    margin: auto;
+
+    .profile{
     margin-top:15px;
     margin-bottom: 25px;
+    margin: auto;
     display: flex;
     justify-content: center;
     font-family: source-han-serif-japanese, serif;
     font-weight: 900;
-    width: min(100vw,max(50% , 600px));
+    width: 375px;
+    height: 300px;
     img{
-      border-radius:50% ;
-      border-width: 3px;
-      width: 120px;
-      height: 120px;
+      position: absolute;
+      width: min(100vw,375px);
+      z-index: 1;
     }
     .names{
-      margin-left: 20px;
-      margin-top: 15px;
+      width: 375px;
+      height: 300px;
+      z-index: 2;
+      p{
+        color: #FFFFFF;
+        z-index: 3;
+      }
+      .role{
+        position: relative;
+        font-size:24px;
+        width: 140px;
+        top:162px;
+        left: 159px;
+      }
+      .name{
+        position: relative;
+        font-size:30px;
+        width: 140px;
+        top:150px;
+        left: 204px;
+      }
+      .pl{
+        background-color: $maincolor;
+        position: relative;
+        height: 30px;
+        width:168px;
+        clip-path: polygon(0% 0%,12% 100%,100% 100%,88% 0%);
+        opacity: 0.67;
+        z-index: 2;
+        top:135px;
+        left: 135px;
+      }
+      .pl2{
+        background-color: $maincolor;
+        position: relative;
+        height: 36px;
+        width:200px;
+        clip-path: polygon(0% 0%,12% 100%,100% 100%,88% 0%);
+        opacity: 0.67;
+        z-index: 2;
+        top:115px;
+        left: 162px;
+      }
     }
   }
-}
-.pl{
-  position: relative;
-  top: -12px;
-  height: 15px;
-  width:168px;
-  clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
-  opacity: 0.6;
-}
-.pl2{
-  position: relative;
-  top: -16px;
-  left: +20px;
-  height: 20px;
-  width:172px;
-  clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
-  opacity: 0.6;
+  }
+
 }
 .aisatu{
   font-size: 16px;
@@ -336,17 +318,16 @@ export default Vue.extend({
       ActivateKaitaku2: false,
     };
   },
-  head(){
-    let url = 'https://sports.nada-sc.jp/2022/';
-    
-    return{
-      title:'トップページ - 第93回灘校体育祭「拓」',
-      meta:[
-      { hid: 'description',name:'description',content:'2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。'},
-      { hid: 'og:description',name:'og:description',content:'2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。'},
-      { hid: 'og:url', name:'og:url',content:url}  
+  head() {
+    const url = 'https://sports.nada-sc.jp/2022/';
+    return {
+      title: 'トップページ - 第93回灘校体育祭「拓」',
+      meta: [
+        { hid: 'description', name: 'description', content: '2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。' },
+        { hid: 'og:description', name: 'og:description', content: '2022年9月25日に開催される、第93回灘校体育祭「拓」の公式ウェブサイトです。' },
+        { hid: 'og:url', name: 'og:url', content: url },
       ],
-    }
+    };
   },
   mounted() {
     const target = new Date(2022, 8, 26);
@@ -354,26 +335,59 @@ export default Vue.extend({
     this.day = Math.floor((target - date) / 86400000);
     setTimeout(() => {
       this.ActivateAratana = true;
-    }, 500);
+    }, 1000);
     setTimeout(() => {
       this.ActivateKaitaku = true;
       this.ActivateAratana2 = true;
-    }, 1000);
+    }, 2250);
     setTimeout(() => {
       this.ActivateTime = true;
       this.ActivateKaitaku2 = true;
-    }, 1500);
+    }, 3500);
     // font読み込み
     const d = document;
-    const config = {
+    let config = {
       kitId: 'zlv1mor',
       scriptTimeout: 3000,
       async: true,
     };
-    const h = d.documentElement; const t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); const tk = d.createElement('script'); let f = false; const s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
+    let h = d.documentElement;
+    let t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout);
+    let tk = d.createElement('script');
+    let f = false;
+    let s = d.getElementsByTagName('script')[0];
+    let a;
+    h.className += ' wf-loading';
+    tk.src = `https://use.typekit.net/${config.kitId}.js`;
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function () {
+      a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try {
+        Typekit.load(config);
+      } catch (e) { }
+    };
+    s.parentNode.insertBefore(tk, s);
+    // font
+    config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true,
+    };
+    h = d.documentElement;
+    t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout);
+    tk = d.createElement('script');
+    f = false;
+    s = d.getElementsByTagName('script')[0];
+    a;
+    h.className += ' wf-loading';
+    tk.src = `https://use.typekit.net/${config.kitId}.js`;
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function () {
+      a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try {
+        Typekit.load(config);
+      } catch (e) { }
+    };
+    s.parentNode.insertBefore(tk, s);
   },
-  methods: {
-
-  },
+  methods: {},
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="header">
-        <p>第93回灘校体育祭</p>
+        <p @click="$router.push('/')">第93回灘校体育祭</p>
         <div class="hb" v-on:click="hbClick">
             <img :src="imgsrc" alt="">
         </div>
@@ -18,7 +18,7 @@
         <nuxt-link to="/points">競技得点</nuxt-link>
       </div>
       <div class="link">
-        <nuxt-link to="/topics">記事特集</nuxt-link>
+        <nuxt-link to="/articles">記事特集</nuxt-link>
       </div>
       <div class="link">
         <nuxt-link to="/news">過去の情報</nuxt-link>
@@ -30,7 +30,7 @@
 <style  lang = "scss" scoped>
 .header{
     position: fixed;
-    height: 100px;
+    height: max(50px,10vh);
     width: 100vw;
     background-color: #FFFFFF;
     z-index: 1000;
@@ -45,6 +45,7 @@
     p{
         position: absolute;
         left: calc( max( 0px , calc( 15vw - 50px )) + 10px);
+        cursor: pointer;
     }
     .hb{
         position: absolute;
@@ -53,18 +54,19 @@
           width: 37px;
           height:20px;
         }
+        cursor: pointer;
     }
 }
 .blank{
-    height: 100px;
+    height: max(50px,10vh);
 }
 .menu{
   position: fixed;
-  top:100px;
+  top:max(50px,10vh);
   z-index: 999;
   background-color: #FFFFFF;
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - max(50px,10vh));
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s;
