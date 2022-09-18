@@ -1,33 +1,31 @@
 <template>
     <div>
         <Header/>
-        <ul>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-          <li><span class="num">(1)</span><span class="name">aaa</span></li>
-        </ul>
+        <img src="~/assets/img/program.png" class="midasi">
+        <div>
+          <ul v-for="program in programs" :key="program.id">
+            <li>
+              <span class="num">({{program.id}})</span>
+              【<span v-if="program.year===0">中１</span><span v-if="program.year===1">中２</span><span v-if="program.year===2">中３</span><span v-if="program.year===3">高１</span><span v-if="program.year===4">高２</span><span v-if="program.year===5">高３</span><span v-if="program.year===6">中学</span><span v-if="program.year===7">高校</span><span v-if="program.year===8">全体</span>】&emsp;&emsp;{{program.name}}
+              <img src="~/assets/img/yajirusi2.png" class="yajirusi">
+            </li>
+          </ul>
+        </div>
     </div>
 </template>
 
-<style>
-
+<style scoped>
 .num {
   color: orange;
   font-size: 20px;
   font-family: din-2014, sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: inline-block;
+  width: 3em;
 }
-.name {
-  font-size: 20px;
+.yajirusi {
+  width: 20px;
 }
 </style>
 
@@ -38,6 +36,7 @@ export default Vue.extend({
   name: 'programs',
   data() {
     return {
+      programs: [],
     };
   },
   head() {
@@ -52,7 +51,17 @@ export default Vue.extend({
       ],
     };
   },
+  mounted(){
+    this.request();
+  },
   methods: {
+    async request() {
+      // @ts-ignore
+      this.programs = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/score', {
+        headers: { 'Content-Type': 'application/json' },
+        data: {},
+      }));
+    },
   },
 });
 </script>
