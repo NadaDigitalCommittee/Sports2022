@@ -214,7 +214,7 @@
 
 .speech{
   margin-top: 50px;
-
+  width: 100vw;
   .midasi{
     height: 50px;
   }
