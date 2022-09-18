@@ -1,11 +1,34 @@
 <template>
     <div>
         <Header/>
+        <ul>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+          <li><span class="num">(1)</span><span class="name">aaa</span></li>
+        </ul>
     </div>
 </template>
 
 <style>
 
+.num {
+  color: orange;
+  font-size: 20px;
+  font-family: din-2014, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.name {
+  font-size: 20px;
+}
 </style>
 
 <script lang="ts">
