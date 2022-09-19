@@ -16,14 +16,16 @@
           </li>
         </ul>
       </div>
-      <div class="descbox" v-if="active">
-        <div class="descshadow" v-if="active" @click="closeDesc()" />
-        <div class="desc">
-          <h2 class="desctitle">{{active.name}}</h2>
-          <h2 class="desctext">{{active.description}}</h2>
-          <div class="descbtn" @click="closeDesc()">閉じる</div>
+      <transition name="fade">
+        <div class="descbox" v-if="active">
+          <div class="descshadow" v-if="active" @click="closeDesc()" />
+          <div class="desc">
+            <h2 class="desctitle">{{active.name}}</h2>
+            <h2 class="desctext">{{active.description}}</h2>
+            <div class="descbtn" @click="closeDesc()">閉じる</div>
+          </div>
         </div>
-      </div>
+      </transition>
     </div>
 </template>
 
@@ -151,6 +153,14 @@
   background-color: #FF4E00;
   padding: 7px 20px;
   margin-top: 30px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .25s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
 
