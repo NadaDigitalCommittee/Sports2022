@@ -11,14 +11,15 @@
               <p>引率課</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
+              <img src="~/assets/img/forarticle/leadphoto.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/judge')" class="link">
               <p>体育委員会各課紹介</p>
               <div class="inside">
                 <p>審判課</p>
               <img src="~/assets/img/yajirusi.png" alt="">
-
               </div>
+              <img src="~/assets/img/forarticle/judgephoto.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/delivery')" class="link">
               <p>体育委員会各課紹介</p>
@@ -33,6 +34,7 @@
                 <p>デザイン課</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
+              <img src="~/assets/img/forarticle/designphoto.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/field')" class="link">
               <p>体育委員会各課紹介</p>
@@ -54,6 +56,7 @@
                 <p>応援団特集</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
+              <img src="~/assets/img/forarticle/cheerphoto.png" alt="" class="photo">
             </div>
           </div>
         </div>
@@ -77,7 +80,7 @@
     width: min(95vw,max(70vw,600px));
 
     .link{
-      height: 40vh;
+      height: calc(min(100vw,max(70vw,600px)) * 0.4 * 673 / 1072 + 115px);
       width: calc(min(100vw,max(70vw,600px)) * 0.7);
       margin: 10px auto;
       background-color: #45485a;
@@ -97,6 +100,11 @@
         img{
           scale: 0.25;
         }
+      }
+      .photo{
+        width:calc(min(100vw,max(70vw,600px)) * 0.4);
+        margin: auto;
+        margin-left:calc(min(100vw,max(70vw,600px)) * 0.15);
       }
     }
     .tokusyu{
