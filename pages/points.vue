@@ -1,38 +1,62 @@
 <template>
     <div>
         <Header/>
-        <!--後は下をいいように弄って-->
-        <table v-for="point in points" :key="point.id">
+        <!--合計得点-->
+        1組, 2組, 3組, 4組
+        <!-- pointIsHiddenがtrueなら???を表示 -->
+        <div v-if="!sum.pointIsHidden">
+          {{sum.scores[0]}}, {{sum.scores[1]}}, {{sum.scores[2]}}, {{sum.scores[3]}}
+        </div>
+        <div v-else>
+          ???, ???, ???, ???
+        </div>
+
+        <!--詳細(時間があれば)-->
+        <table>
           <tr>
-            <td>
-              {{point.id}}
-            </td>
-            <td>
-              {{point.name}}
-            </td>
-            <td>
-              {{point.score1}}
-            </td>
-            <td>
-              {{point.score2}}
-            </td>
-            <td>
-              {{point.score3}}
-            </td>
-            <td>
-              {{point.score4}}
-            </td>
-            <td>
-              {{point.year}}
-            </td>
-            <td>
-              {{point.confirm}}
-            </td>
+            <td>競技</td>
+            <td>1組</td>
+            <td>2組</td>
+            <td>3組</td>
+            <td>4組</td>
+          </tr>
+          <tr v-for="point in points" :key="point.id">
+            <!-- 競技名 -->
+            <td>{{point.name}}</td>
+
+            <!-- 1組(confirmがfalseなら-を表示、pointIsHiddenがtrueなら??を表示) -->
+            <td v-if="!point.confirm">-</td>
+            <td v-else-if="point.pointIsHidden">??</td>
+            <td v-else>{{point.score1}}</td>
+
+            <!-- 他も同じ -->
+            <td v-if="!point.confirm">-</td>
+            <td v-else-if="point.pointIsHidden">??</td>
+            <td v-else>{{point.score2}}</td>
+
+            <td v-if="!point.confirm">-</td>
+            <td v-else-if="point.pointIsHidden">??</td>
+            <td v-else>{{point.score3}}</td>
+
+            <td v-if="!point.confirm">-</td>
+            <td v-else-if="point.pointIsHidden">??</td>
+            <td v-else>{{point.score4}}</td>
+          </tr>
+          <tr v-if="!sum.pointIsHidden">
+            <td>合計</td>
+            <td>{{sum.scores[0]}}</td>
+            <td>{{sum.scores[1]}}</td>
+            <td>{{sum.scores[2]}}</td>
+            <td>{{sum.scores[3]}}</td>
+          </tr>
+          <tr v-else>
+            <td>合計</td>
+            <td>???</td>
+            <td>???</td>
+            <td>???</td>
+            <td>???</td>
           </tr>
         </table>
-        <div class="aqua" @click = 'request'>request</div>
-        <p>{{sum[0]}},{{sum[1]}},{{sum[2]}},{{sum[3]}}</p>
-        <div class="aqua" @click = 'requestsum'>requestsum</div>
     </div>
 </template>
 
@@ -51,7 +75,7 @@ export default Vue.extend({
   data() {
     return {
       points: [],
-      sum:[],
+      sum: { scores: [0, 0, 0, 0], pointIsHidden: true },
     };
   },
   head() {
@@ -66,7 +90,7 @@ export default Vue.extend({
       ],
     };
   },
-  mounted(){
+  mounted() {
     this.request();
     this.requestsum();
   },
