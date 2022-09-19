@@ -1,11 +1,11 @@
 <template>
     <div>
         <Header/>
-        <img src="~/assets/img/program.png" class="pic">
+        <img src="~/assets/img/program.png">
         <h1 class="midasi">午前の部</h1>
         <div>
           <ul v-for="program in programs" :key="program.id">
-            <li>
+            <li class="programlist">
               <span class="num">({{program.id}})</span>
               <span class="honbun">【
               <span v-if="program.year===0">中１</span>
@@ -20,7 +20,7 @@
               <span v-if="program.year===9">応援団</span>
               <span v-if="program.year===10">クラブ</span>
               】&emsp;<span v-if="program.year<9">&emsp;</span>{{program.name}}</span>
-              <img src="~/assets/img/yajirusi2.png" class="yajirusi">
+              <img src="~/assets/img/yajirusi2.svg" class="yajirusi">
             </li>
             <p class="midasi" v-if="program.id===15">午後の部</p>
           </ul>
@@ -29,8 +29,10 @@
 </template>
 
 <style scoped>
-.pic {
-  width: 10em;
+.programlist {
+  display: flex;
+  align-items: center;
+>>>>>>> fb79e630ec21bb0a99b5a8335c9ea7ce916a9527
 }
 .num {
   color: #FF4E00;
@@ -42,6 +44,7 @@
   width: 2em;
 }
 .yajirusi {
+<<<<<<< HEAD
   width: 11px;
   display: inline-block;
 }
@@ -60,6 +63,9 @@
   font-weight: 400;
   font-style: normal;
   line-height: 3em;
+  width: 15px;
+  margin-left: 5px;
+>>>>>>> fb79e630ec21bb0a99b5a8335c9ea7ce916a9527
 }
 </style>
 
