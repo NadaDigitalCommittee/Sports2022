@@ -32,7 +32,6 @@
 .programlist {
   display: flex;
   align-items: center;
->>>>>>> fb79e630ec21bb0a99b5a8335c9ea7ce916a9527
 }
 .num {
   color: #FF4E00;
@@ -44,7 +43,6 @@
   width: 2em;
 }
 .yajirusi {
-<<<<<<< HEAD
   width: 11px;
   display: inline-block;
 }
@@ -65,7 +63,6 @@
   line-height: 3em;
   width: 15px;
   margin-left: 5px;
->>>>>>> fb79e630ec21bb0a99b5a8335c9ea7ce916a9527
 }
 </style>
 
