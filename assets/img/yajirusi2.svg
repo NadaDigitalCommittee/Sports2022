@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+  <g id="グループ_18" data-name="グループ 18" transform="translate(-235 -229.335)">
+    <path id="パス_33" data-name="パス 33" d="M864.222,225.117l2.662,2.662-2.662,2.662" transform="translate(-624.726 7.166)" fill="none" stroke="#000" stroke-width="0.5"/>
+    <g id="楕円形_6" data-name="楕円形 6" transform="translate(235 229.335)" fill="none" stroke="#000" stroke-width="0.5">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="5.25" fill="none"/>
+    </g>
+  </g>
+</svg>
