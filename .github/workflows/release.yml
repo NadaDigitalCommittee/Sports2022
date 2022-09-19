@@ -54,7 +54,9 @@ jobs:
         run: |
           git clone git@github.com:NadaDigitalCommittee/SportsPublic.git
           cd SportsPublic
-          rm -r ./2022/
+          if [ -e ./2022/ ]; then
+            rm -r ./2022/
+          fi
           mv ../src/dist/ ./2022/
           git add -A
           if ! git diff --cached --quiet; then
