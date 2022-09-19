@@ -61,7 +61,6 @@
   font-weight: 400;
   font-style: normal;
   line-height: 3em;
-  width: 15px;
   margin-left: 5px;
 }
 </style>
