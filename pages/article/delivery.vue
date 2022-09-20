@@ -92,14 +92,16 @@ clip-path: polygon(0% 0%,8% 100%,100% 100%,92% 0%);
 opacity: 0.6;
 }
 .aisatu{
-font-size: 16px;
-font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-margin: auto;
-padding-right: 15px;
-padding-left:15px;
-text-align: left;
-width: calc( min(100vw,max(70% , 600px)) - 30px);
-line-height: 28px;
+  font-size: 16px;
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: auto;
+  padding-right: 15px;
+  padding-left:15px;
+  text-align: left;
+  width: calc( min(100vw,max(70% , 600px)) - 30px);
+  line-height: 26px;
 }
 </style>
 

@@ -170,6 +170,10 @@
   margin-bottom: 30px;
 }
 .news{
+  
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
     display: flex;
     justify-content: center;
   table{
@@ -293,11 +297,14 @@
 }
 .aisatu{
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: auto;
   padding-right: 15px;
   padding-left:15px;
-  text-align: center;
+  text-align: left;
+  line-height: 26px;
   width: calc( min(100vw,max(50% , 600px)) - 30px);
 }
 

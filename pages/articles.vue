@@ -49,6 +49,7 @@
                 <p>相撲特集</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
+              <img src="~/assets/img/forarticle/sumophoto.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/cheer')" class="link tokusyu">
               <p>体育祭当日</p>

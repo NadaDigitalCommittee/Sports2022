@@ -59,7 +59,7 @@
     font-size: 20px;
     align-items: center;
     border-color: $maincolor;
-    border-bottom-width: 1px;
+    //border-bottom-width: 1px;
     a{
         position: absolute;
         left: calc( max( 0px , calc( 15vw - 50px )) + 10px);
