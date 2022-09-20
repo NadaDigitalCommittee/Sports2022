@@ -100,7 +100,7 @@ padding-right: 15px;
 padding-left:15px;
 text-align: left;
 width: calc( min(100vw,max(70% , 600px)) - 30px);
-line-height: 21px;
+line-height: 28px;
 }
 </style>
 
