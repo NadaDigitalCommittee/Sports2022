@@ -4,12 +4,12 @@
     <div class="naiyou">
       <img src="~/assets/img/forarticle/sumo.svg" alt="" class="midasi">
       <div class="rikisi">
-        <p class="itirann">力士一覧</p>
+        <p class="itirann midasi">力士一覧</p>
         <div class="kessyou">
-          <p>決勝トーナメント進出者</p>
+          <p class="midasi">決勝トーナメント進出者</p>
         </div>
         <div class="best16">
-          <p>ベスト16</p>
+          <p class="midasi">ベスト16</p>
         </div>
       </div>
     </div>
@@ -25,18 +25,41 @@
     margin:0 auto;
     margin-top: 15px;
 
-    .midasi{
-      width: min(50vw,200px);
-    }
   }
   .rikisi{
-    width: 90%;
+    position: relative;
+    left: -10px;
+    width: calc(100% + 20px);
     margin: auto;
     margin-top: 30px;
     .itirann{
       width: 100%;
       background-color: #FF4E00;
       padding: 15px 0;
+      text-align: center;
+      color: white;
+      font-size: min(25px,8vw);
+    }
+    .kessyou{
+      margin: 10px 0;
+      width: 80%;
+      margin-left: 10%;
+      border-bottom-color: black;
+      border-bottom-width: 1px;
+    }
+    .best16{
+      margin: 10px 0;
+      width: 80%;
+      margin-left: 10%;
+      border-bottom-color: black;
+      border-bottom-width: 1px;
+    }
+    .midasi{
+      width: 100%;
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: min(20px,6.4vw);
     }
   }
 </style>
