@@ -1,14 +1,27 @@
 <template>
     <div>
         <Header/>
-        <!--合計得点-->
-        1組, 2組, 3組, 4組
-        <!-- pointIsHiddenがtrueなら???を表示 -->
-        <div v-if="!sum.pointIsHidden">
-          {{sum.scores[0]}}, {{sum.scores[1]}}, {{sum.scores[2]}}, {{sum.scores[3]}}
-        </div>
-        <div v-else>
-          ???, ???, ???, ???
+        <div class="main">
+          <img class="title" src="~/assets/img/points_title.png"  alt="タイトル"/>
+          <div class="background">
+            <img class="background_img" src="~/assets/img/points_background.png" alt="競技得点"/>
+            <div class="class1 class_">
+              <div v-if="!sum.pointIsHidden">{{sum.scores[0]}}</div>
+              <div v-else>???</div>
+            </div>
+            <div class="class2 class_">
+              <div v-if="!sum.pointIsHidden">{{sum.scores[1]}}</div>
+              <div v-else>???</div>
+            </div>
+            <div class="class3 class_">
+              <div v-if="!sum.pointIsHidden">{{sum.scores[2]}}</div>
+              <div v-else>???</div>
+            </div>
+            <div class="class4 class_">
+              <div v-if="!sum.pointIsHidden">{{sum.scores[3]}}</div>
+              <div v-else>???</div>
+            </div>
+          </div>
         </div>
 
         <!--詳細(時間があれば)-->
@@ -61,8 +74,52 @@
 </template>
 
 <style scoped>
-.aqua{
-  background-color: aqua;
+.main {
+  width: 100vw;
+  margin: 20px 0 20px;
+}
+
+.title {
+  width: 160px;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+.background{
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.background_img{
+  width: 100%;
+}
+
+.class_{
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  font-family: "DIN 2014";
+  font-style: "Narrow Bold";
+  font-weight: 900;
+  transform: translate(-50%,-50%);
+}
+.class1{
+  left: 25%;
+  top: 30%;
+}
+.class2{
+  left: 75%;
+  top: 30%;
+}
+.class3{
+  left: 25%;
+  top: 80%;
+}
+.class4{
+  left: 75%;
+  top: 80%;
 }
 
 </style>
