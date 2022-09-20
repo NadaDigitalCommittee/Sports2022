@@ -25,6 +25,7 @@
         </div>
 
         <!--詳細(時間があれば)-->
+        <!-- コメントを外す場合は下のコメントの残骸の前後についてる@を外すこと
         <table>
           <tr>
             <td>競技</td>
@@ -34,15 +35,15 @@
             <td>4組</td>
           </tr>
           <tr v-for="point in points" :key="point.id">
-            <!-- 競技名 -->
+            <@!-- 競技名 --@>
             <td>{{point.name}}</td>
 
-            <!-- 1組(confirmがfalseなら-を表示、pointIsHiddenがtrueなら??を表示) -->
+            <@!-- 1組(confirmがfalseなら-を表示、pointIsHiddenがtrueなら??を表示) --@>
             <td v-if="!point.confirm">-</td>
             <td v-else-if="point.pointIsHidden">??</td>
             <td v-else>{{point.score1}}</td>
 
-            <!-- 他も同じ -->
+            <@!-- 他も同じ --@>
             <td v-if="!point.confirm">-</td>
             <td v-else-if="point.pointIsHidden">??</td>
             <td v-else>{{point.score2}}</td>
@@ -70,6 +71,7 @@
             <td>???</td>
           </tr>
         </table>
+        -->
     </div>
 </template>
 

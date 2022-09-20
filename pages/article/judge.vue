@@ -13,7 +13,7 @@
             <div class="pl2"/>
           </div>
         </div>
-        <p class="aisatu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni harum expedita! Est veniam inventore atque ratione error temporibus consequatur, voluptas nam architecto quod provident vitae, suscipit mollitia aliquam aspernatur.</p>
+        <p class="aisatu">審判課長の堀坂です。審判課は競技規則を作成・改定するほか、体育祭当日の審判業務を指揮しています。競技者が純粋に勝負を楽しみ、さらに競技者だけでなく観客の生徒及び保護者の皆様にも楽しんでいただけるような環境を作り出すことこそが審判課の使命であると考えています。<br/><br/>この数年間、新型コロナウイルスの影響もあり、我々は「集」よりも「個」を意識した学校生活を送るようになったと感じます。体育祭の鼓笛隊は廃止され、垂れ幕制作の技術の継承は危機に陥りつつあります。76回生を中心とする体育委員会はそのような現状に対する危機感を持って準備を進めてきました。受け継がれてきた伝統を着実に守り進化させるための大切な一歩として、もう一度生徒全員が「灘校」という集団として輝くための第一歩として、この第93回灘校体育祭が皆様の心に深く刻まれることを祈っております。</p>
     </div>
     </div>
   </div>
@@ -97,8 +97,9 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", san
 margin: auto;
 padding-right: 15px;
 padding-left:15px;
-text-align: center;
+text-align: left;
 width: calc( min(100vw,max(70% , 600px)) - 30px);
+line-height: 21px;
 }
 </style>
 

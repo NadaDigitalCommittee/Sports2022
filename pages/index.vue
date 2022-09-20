@@ -24,26 +24,26 @@
         <tbody>
           <tr>
             <th>
-              2002/01/01
+              2022.09.20
             </th>
             <td>
-              adipisicing elit.
+              相撲の予選が行われました
             </td>
           </tr>
           <tr>
             <th>
-              2001/01/01
+              2022.09.17
             </th>
             <td>
-              sit amet consectetur
+              雨天時プログラムが完成しました
             </td>
           </tr>
           <tr>
             <th>
-              2000/01/01
+              2022.09.14
             </th>
             <td>
-              Lorem ipsum dolor
+              パンフレットが完成しました
             </td>
           </tr>
         </tbody>

@@ -99,8 +99,9 @@
   margin: auto;
   padding-right: 15px;
   padding-left:15px;
-  text-align: center;
+  text-align: left;
   width: calc( min(100vw,max(70% , 600px)) - 30px);
+  line-height: 21px;
 }
 </style>
 
