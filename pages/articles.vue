@@ -75,11 +75,11 @@
   margin-top: 3vh;
   text-align: left;
   .midasi{
+    margin-left: calc(min(95vw,max(70vw,600px)) * 0.15);
     height: 50px;
   }
   .links{
-    width: min(95vw,max(70vw,600px));
-
+    width:min(95vw,max(70vw,600px));
     .link{
       height: calc(min(100vw,max(70vw,600px)) * 0.4 * 673 / 1072 + 115px);
       width: calc(min(100vw,max(70vw,600px)) * 0.7);

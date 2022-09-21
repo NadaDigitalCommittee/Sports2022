@@ -36,14 +36,14 @@
                 <p class="name">石塚雅</p>
               </div>
               <div class="each">
-                <img src="~/assets/img/forarticle/sumoface/circle3_体育委員長.jpg" alt="">
-                <p class="year">高校二年</p>
-                <p class="name">体育委員長</p>
+                <img src="~/assets/img/forarticle/sumoface/circle10_どろぼう.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">どろぼう</p>
               </div>
               <div class="each">
-                <img src="~/assets/img/forarticle/sumoface/circle6_Mr.灘.jpg" alt="">
-                <p class="year">高校二年</p>
-                <p class="name">Mr.灘</p>
+                <img src="~/assets/img/forarticle/sumoface/circle1_なぎこ.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">なぎこ</p>
               </div>
             </div>
             <div class="row">
@@ -82,19 +82,19 @@
             </div>
             <div class="row">
               <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle3_体育委員長.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">体育委員長</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle6_Mr.灘.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">Mr.灘</p>
+              </div>
+              <div class="each">
                 <img src="~/assets/img/forarticle/sumoface/circle15_疾風.jpg" alt="">
                 <p class="year">高校一年</p>
                 <p class="name">疾風</p>
-              </div>
-              <div class="each">
-                <img src="~/assets/img/forarticle/sumoface/circle10_どろぼう.jpg" alt="">
-                <p class="year">不明</p>
-                <p class="name">どろぼう</p>
-              </div>
-              <div class="each">
-                <img src="~/assets/img/forarticle/sumoface/circle1_なぎこ.jpg" alt="">
-                <p class="year">不明</p>
-                <p class="name">なぎこ</p>
               </div>
             </div>
           </div>
@@ -114,6 +114,7 @@
     margin-top: 15px;
     
     .midasiimg{
+      margin-left: 10%;
       height: 40px;
     }
   }

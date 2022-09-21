@@ -3,7 +3,9 @@
       <Header/>
       <div class="speech">
         <div class="concept">
-          <img src="~/assets/img/forarticle/design.png" alt="デザイン課" class="midasi">
+          <div class="midasi">
+            <img src="~/assets/img/forarticle/design.png" alt="デザイン課" >
+          </div>
           <div class="profile">
             <img src="~/assets/img/forarticle/josuke.png" alt="デザイン課長の顔写真" class="face">
             <div class="names">
@@ -23,11 +25,15 @@
 .speech{
   width: 100vw;
   margin-top: 20px;
-  .midasi{
-    position: relative;
-    left: 10px;
-    height: 40px;
-  }
+.midasi{
+  position: relative;
+  margin: 0 auto;
+  width: calc( min(100vw,max(70% , 600px)) - 60px);
+  height: 40px;
+}
+.midasi img{
+  height: 40px;
+}
   .concept{
     width: min(100vw,max(75vw,600px));
     margin: 0 auto;

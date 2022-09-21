@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="header">
-        <nuxt-link to="/">第93回灘校体育祭</nuxt-link>
+        <div @click="$router.push('/')" class="totop">第93回灘校体育祭</div>
         <div class="hb" v-on:click="hbClick">
             <img :src="imgsrc" alt="">
         </div>
@@ -46,6 +46,7 @@
 </template>
 
 <style  lang = "scss" scoped>
+
 .header{
     position: fixed;
     height: max(50px,10vh);
@@ -60,9 +61,10 @@
     align-items: center;
     border-color: $maincolor;
     //border-bottom-width: 1px;
-    a{
+    .totop{
         position: absolute;
         left: calc( max( 0px , calc( 15vw - 50px )) + 10px);
+        cursor: pointer;
     }
     .hb{
         position: absolute;

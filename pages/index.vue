@@ -51,7 +51,9 @@
     </div>
     <div class="speech">
       <div class="vision">
-        <img src="~/assets/img/vision.png" alt="vision" class="midasi">
+        <div class="midasi">
+        <img src="~/assets/img/vision.png" alt="vision">
+        </div>
         <div class="profile">
           <img src="~/assets/img/ikedafull.png" alt="体育委員長の写真" class="face">
           <div class="names">
@@ -220,6 +222,12 @@
   margin-top: 50px;
   width: 100vw;
   .midasi{
+  margin: auto;
+  padding-right: 15px;
+  padding-left:15px;
+  width: calc( min(100vw,max(50% , 600px)) - 30px);
+  }
+  .midasi img{
     height: 50px;
   }
   .vision{

@@ -3,7 +3,10 @@
     <Header/>
     <div class="speech">
       <div class="concept">
-        <img src="~/assets/img/forarticle/delivery.png" alt="運搬課" class="midasi">
+        <div class="midasi">
+        <img src="~/assets/img/forarticle/delivery.png" alt="運搬課">
+
+        </div>
         <div class="profile">
           <img src="~/assets/img/forarticle/tanaka.png" alt="運搬課長の顔写真" class="face">
           <div class="names">
@@ -25,7 +28,11 @@ width: 100vw;
 margin-top: 20px;
 .midasi{
   position: relative;
-  left: 10px;
+  margin: 0 auto;
+  width: calc( min(100vw,max(70% , 600px)) - 60px);
+  height: 40px;
+}
+.midasi img{
   height: 40px;
 }
 .concept{

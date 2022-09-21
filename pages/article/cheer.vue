@@ -2,7 +2,10 @@
   <div class="bg">
     <Header/>
     <div class="naiyou">
-      <img src="~/assets/img/forarticle/cheer.png" alt="" class="midasi"><br/>
+      <div class="midasi">
+        <img src="~/assets/img/forarticle/cheer.png" alt="" >
+      </div>
+      <br/>
       <img src="~/assets/img/forarticle/cheer_top.png" alt="" class="full">
       <div class="aisatu">
         <p class="title">団長挨拶</p>
@@ -28,7 +31,11 @@
     margin-top: 15px;
     margin-bottom: 160px;
     .midasi{
-      width: min(50vw,200px);
+      width: calc( min(100vw,max(70% , 600px)) - 30px);
+      margin: 0 auto;
+    }
+    .midasi img{
+      height: 40px;
     }
   }
   
@@ -43,7 +50,7 @@
       margin-left: max(calc(min(95vw,max(70vw,600px)) * 0.5 - 45vw),calc(min(95vw,max(70vw,600px)) * 0.5 - 162px));
     }
   .aisatu{
-    width: 60vw;
+    width: calc( min(100vw,max(70% , 600px)) - 30px);
     margin: auto;
     margin-top: max(20px,5vh);
   }
