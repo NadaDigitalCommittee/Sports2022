@@ -3,7 +3,7 @@
     <Header/>
     <div class="naiyou">
       <div class="midasi">
-        <img src="~/assets/img/forarticle/cheer.png" alt="" >
+        <p class="midasitext"><span class="changecolor">応</span>援団特集</p>
       </div>
       <br/>
       <img src="~/assets/img/forarticle/cheer_top.png" alt="" class="full">
@@ -22,6 +22,16 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
   .bg{
     width: 100vw;
   }

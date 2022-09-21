@@ -3,7 +3,9 @@
         <Header/>
         <div class="body">
         <div class="articles">
-          <img src="~/assets/img/articles.png" alt="articles" class="midasi">
+          <div class="midasi">
+            <p class="midasitext"><span class="changecolor">A</span>rticles</p>
+          </div>
           <div class="links">
             <div @click="$router.push('/article/lead')" class="link">
               <p>体育委員会各課紹介</p>
@@ -66,6 +68,15 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    font-family: garamond-premier-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .body{
   width: 100vw;
 }

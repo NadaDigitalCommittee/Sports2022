@@ -2,7 +2,7 @@
     <div>
         <Header/>
         <div class="main">
-          <img class="title" src="~/assets/img/points_title.png"  alt="タイトル"/>
+          <p class="midasitext title"><span class="changecolor">競</span>技得点</p>
           <div class="background">
             <img class="background_img" src="~/assets/img/points_background.png" alt="競技得点"/>
             <div class="class1 class_">
@@ -75,7 +75,17 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang = "scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .main {
   width: 100vw;
   margin: 20px 0 20px;

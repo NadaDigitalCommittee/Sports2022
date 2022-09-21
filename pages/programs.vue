@@ -2,7 +2,8 @@
     <div>
       <Header/>
       <div class="main">
-        <img class="title" src="~/assets/img/program.png">
+        
+        <p class="midasitext title"><span class="changecolor">P</span>rogram</p>
         <h1 class="midasi">午前の部</h1>
         <ul>
           <li v-for="program in programs" :key="program.id">
@@ -29,7 +30,16 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang = "scss">
+  .midasitext{
+    font-family: garamond-premier-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .main {
   width: 100vw;
   margin: 20px 0 20px;

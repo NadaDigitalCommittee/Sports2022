@@ -2,7 +2,7 @@
   <div class="bg">
     <Header/>
     <div class="naiyou">
-      <img src="~/assets/img/forarticle/sumo.png" alt="" class="midasiimg">
+        <p class="midasitext"><span class="changecolor">相</span>撲特集</p>
       <div class="rikisi">
         <p class="itirann midasi">力士一覧</p>
         <div class="kessyou">
@@ -105,6 +105,16 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
   .bg{
     width: 100vw;
   }
@@ -113,7 +123,7 @@
     margin:0 auto;
     margin-top: 15px;
     
-    .midasiimg{
+    .midasitext{
       margin-left: 10%;
       height: 40px;
     }

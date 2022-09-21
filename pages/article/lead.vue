@@ -4,7 +4,7 @@
     <div class="speech">
       <div class="concept">
         <div class="midasi">
-          <img src="~/assets/img/forarticle/lead.png" alt="引率課" >
+          <p class="midasitext"><span class="changecolor">引</span>率課</p>
         </div>
         <div class="profile">
           <img src="~/assets/img/forarticle/fujisawa.png" alt="引率課長の顔写真" class="face">
@@ -22,6 +22,16 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .speech{
 width: 100vw;
 margin-top: 20px;

@@ -4,8 +4,7 @@
     <div class="speech">
       <div class="concept">
         <div class="midasi">
-
-          <img src="~/assets/img/forarticle/field.png" alt="フィールド課">
+        <p class="midasitext"><span class="changecolor">フ</span>ィールド課</p>
         </div>
         <div class="profile">
           <img src="~/assets/img/forarticle/ikeda.png" alt="フィールド課長の顔写真" class="face">
@@ -24,6 +23,16 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .speech{
 width: 100vw;
 margin-top: 20px;

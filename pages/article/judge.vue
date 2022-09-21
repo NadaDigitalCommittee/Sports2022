@@ -4,7 +4,7 @@
     <div class="speech">
       <div class="concept">
         <div class="midasi">
-        <img src="~/assets/img/forarticle/judge.png" alt="審判課">
+        <p class="midasitext"><span class="changecolor">審</span>判課</p>
 
         </div>
         <div class="profile">
@@ -23,6 +23,16 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .speech{
 width: 100vw;
 margin-top: 20px;

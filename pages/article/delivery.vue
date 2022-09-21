@@ -4,8 +4,8 @@
     <div class="speech">
       <div class="concept">
         <div class="midasi">
-        <img src="~/assets/img/forarticle/delivery.png" alt="運搬課">
 
+        <p class="midasitext"><span class="changecolor">運</span>搬課</p>
         </div>
         <div class="profile">
           <img src="~/assets/img/forarticle/tanaka.png" alt="運搬課長の顔写真" class="face">
@@ -23,6 +23,16 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    .changecolor{
+      color: #FF4E00;
+    }
+  }
 .speech{
 width: 100vw;
 margin-top: 20px;
