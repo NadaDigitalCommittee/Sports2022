@@ -85,14 +85,14 @@
 
 #id1{
   position: relative;
-  left: calc( 50vw - ( min(45vh,90vw) * 175 / 337 ) + 10px);
+  left: calc( 50vw - ( min(45vh,90vw) * 175 / 337 ) + 1.5vh);
   width: calc( min(45vh,90vw) * 349 / 337);
   height: min(45vh,90vw);
   resize: none;
 }
 #id2{
   position: relative;
-  left: calc(50vw - ( min(45vh,90vw) * 235 / 337 ) + 10px);
+  left: calc(50vw - ( min(45vh,90vw) * 235 / 337 ) + 1.5vh);
   top: calc( 0vh -  min(45vh,90vw) * 30 / 337  );
   width: calc( min(45vh,90vw) * 34 / 337);
   height: calc( min(45vh,90vw) * 305 / 337);
@@ -100,7 +100,7 @@
 }
 #id3{
   position: relative;
-  left: calc(50vw - ( min(45vh,90vw) * 535 / 337 ) + 10px);
+  left: calc(50vw - ( min(45vh,90vw) * 535 / 337 ) + 1.5vh);
   top: calc( min(45vh,90vw) * 95 / 337 );
   width: calc( min(45vh,90vw) * 34 / 337 );
   height: calc( min(45vh,90vw) * 180 / 337 );
