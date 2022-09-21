@@ -3,7 +3,10 @@
     <Header/>
     <div class="speech">
       <div class="concept">
-        <img src="~/assets/img/forarticle/field.png" alt="フィールド課" class="midasi">
+        <div class="midasi">
+
+          <img src="~/assets/img/forarticle/field.png" alt="フィールド課">
+        </div>
         <div class="profile">
           <img src="~/assets/img/forarticle/ikeda.png" alt="フィールド課長の顔写真" class="face">
           <div class="names">
@@ -13,7 +16,8 @@
             <div class="pl2"/>
           </div>
         </div>
-        <p class="aisatu">運搬課長の田中です。運搬課の仕事内容は主に２つあります。１つ目は体育委員のための運搬に関する資料作成、2つ目は体育祭当日に運搬テントで運搬する用具の準備です。<br/><br/>今年度の体育祭はコロナ前の観客無制限フル開催を取り戻しただけでなく、この2年で技術が確立されてきた体育祭HPと動画配信をも取り入れた、まさにポストコロナの体育祭のあるべき姿なのではないでしょうか。この体育祭を実現するために、精力善用自他共栄の精神のもと共に励んできた、体育委員長をはじめとする全ての関係者の方々に改めて敬意を表したいと思います。<br/>最後に、この体育祭がそのテーマ「拓」にふさわしい、新時代の幕開けとして後世に誇れる体育祭となることを願っています。みんなで盛り上げていきましょう！</p>
+        <p class="aisatu">フィールド課では、他の課に配属されない様々な業務を担当します。目立つところでは新競技の考案やプログラムの作成がありますが、用具の発注や合同体育の調整に至るまで、委員長を務める池田を中心に、灘校体育祭を縁の下から支えてきました。<br/>
+体育祭本番は本部テントからフィールド全体の管理と指示を行います。</p>
     </div>
     </div>
   </div>
@@ -25,8 +29,13 @@ width: 100vw;
 margin-top: 20px;
 .midasi{
   position: relative;
-  left: 10px;
+  margin: 0 auto;
+  width: calc( min(100vw,max(70% , 600px)) - 60px);
   height: 40px;
+}
+.midasi img{
+  height: 40px;
+  width: 238px;
 }
 .concept{
   width: min(100vw,max(75vw,600px));
@@ -93,16 +102,19 @@ opacity: 0.6;
 }
 .aisatu{
 font-size: 16px;
-font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 margin: auto;
 padding-right: 15px;
 padding-left:15px;
-text-align: center;
+text-align: left;
 width: calc( min(100vw,max(70% , 600px)) - 30px);
+line-height: 26px;
 }
 </style>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 
 export default Vue.extend({
@@ -122,6 +134,16 @@ export default Vue.extend({
         { hid: 'og:url', name: 'og:url', content: `${url}article/field` },
       ],
     };
+  },
+  mounted() {
+    // font
+    const d = document;
+    const config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true,
+    };
+    const h = d.documentElement; const t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); const tk = d.createElement('script'); let f = false; const s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
   },
   methods: {
   },

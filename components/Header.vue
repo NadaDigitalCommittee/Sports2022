@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="header">
-        <p @click="$router.push('/')">第93回灘校体育祭</p>
+        <div @click="$router.push('/')" class="totop">第93回灘校体育祭</div>
         <div class="hb" v-on:click="hbClick">
             <img :src="imgsrc" alt="">
         </div>
@@ -19,15 +19,34 @@
       </div>
       <div class="link">
         <nuxt-link to="/articles">記事特集</nuxt-link>
-      </div>
-      <div class="link">
-        <nuxt-link to="/news">過去の情報</nuxt-link>
+        <div class="sorezore">
+          <nuxt-link to="/article/lead">体育委員会 引率課<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
+        <div class="sorezore">
+          <nuxt-link to="/article/judge">体育委員会 審判課<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
+        <div class="sorezore">
+          <nuxt-link to="/article/delivery">体育委員会 運搬課<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
+        <div class="sorezore">
+          <nuxt-link to="/article/design">体育委員会 デザイン課<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
+        <div class="sorezore">
+          <nuxt-link to="/article/field">体育委員会 フィールド課<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
+        <div class="sorezore">
+          <nuxt-link to="/article/sumo">相撲特集<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
+        <div class="sorezore">
+          <nuxt-link to="/article/cheer">応援団特集<img src="~/assets/img/yajirusi2.svg" alt=""></nuxt-link>
+        </div>
       </div>
     </div>
     </div>
 </template>
 
 <style  lang = "scss" scoped>
+
 .header{
     position: fixed;
     height: max(50px,10vh);
@@ -41,8 +60,8 @@
     font-size: 20px;
     align-items: center;
     border-color: $maincolor;
-    border-bottom-width: 1px;
-    p{
+    //border-bottom-width: 1px;
+    .totop{
         position: absolute;
         left: calc( max( 0px , calc( 15vw - 50px )) + 10px);
         cursor: pointer;
@@ -89,6 +108,21 @@
   font-family: toppan-bunkyu-midashi-go-std, sans-serif;
   font-weight: 900;
   font-style: normal;
+  font-size: 20px;
+}
+.sorezore{
+  font-size: 15px;
+  font-family: toppan-bunkyu-gothic-pr6n,serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  margin: 12px 0;
+  img{
+    position: relative;
+    width: 12px;
+    top: -3px;
+    left: 6px;
+  }
 }
 </style>
 

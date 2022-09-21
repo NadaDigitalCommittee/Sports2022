@@ -3,7 +3,10 @@
     <Header/>
     <div class="speech">
       <div class="concept">
-        <img src="~/assets/img/forarticle/judge.png" alt="審判課" class="midasi">
+        <div class="midasi">
+        <img src="~/assets/img/forarticle/judge.png" alt="審判課">
+
+        </div>
         <div class="profile">
           <img src="~/assets/img/forarticle/horisaka.png" alt="審判課長の顔写真" class="face">
           <div class="names">
@@ -13,7 +16,7 @@
             <div class="pl2"/>
           </div>
         </div>
-        <p class="aisatu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni harum expedita! Est veniam inventore atque ratione error temporibus consequatur, voluptas nam architecto quod provident vitae, suscipit mollitia aliquam aspernatur.</p>
+        <p class="aisatu">審判課長の堀坂です。審判課は競技規則を作成・改定するほか、体育祭当日の審判業務を指揮しています。競技者が純粋に勝負を楽しみ、さらに競技者だけでなく観客の生徒及び保護者の皆様にも楽しんでいただけるような環境を作り出すことこそが審判課の使命であると考えています。<br/><br/>この数年間、新型コロナウイルスの影響もあり、我々は「集」よりも「個」を意識した学校生活を送るようになったと感じます。体育祭の鼓笛隊は廃止され、垂れ幕制作の技術の継承は危機に陥りつつあります。76回生を中心とする体育委員会はそのような現状に対する危機感を持って準備を進めてきました。受け継がれてきた伝統を着実に守り進化させるための大切な一歩として、もう一度生徒全員が「灘校」という集団として輝くための第一歩として、この第93回灘校体育祭が皆様の心に深く刻まれることを祈っております。</p>
     </div>
     </div>
   </div>
@@ -25,7 +28,11 @@ width: 100vw;
 margin-top: 20px;
 .midasi{
   position: relative;
-  left: 10px;
+  margin: 0 auto;
+  width: calc( min(100vw,max(70% , 600px)) - 60px);
+  height: 40px;
+}
+.midasi img{
   height: 40px;
 }
 .concept{
@@ -93,16 +100,19 @@ opacity: 0.6;
 }
 .aisatu{
 font-size: 16px;
-font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 margin: auto;
 padding-right: 15px;
 padding-left:15px;
-text-align: center;
+text-align: left;
 width: calc( min(100vw,max(70% , 600px)) - 30px);
+line-height: 26px;
 }
 </style>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 
 export default Vue.extend({
@@ -122,6 +132,16 @@ export default Vue.extend({
         { hid: 'og:url', name: 'og:url', content: `${url}article/judge` },
       ],
     };
+  },
+  mounted() {
+    // font
+    const d = document;
+    const config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true,
+    };
+    const h = d.documentElement; const t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); const tk = d.createElement('script'); let f = false; const s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
   },
   methods: {
   },

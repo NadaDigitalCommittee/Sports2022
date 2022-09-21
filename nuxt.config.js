@@ -67,7 +67,9 @@ export default {
   ],
 
   // プラグイン一覧
-  plugins: [],
+  plugins: [
+    { src: "~/plugins/adobe-fonts.js", mode: "client" },
+  ],
 
   // コンポーネントを自動インポートする
   components: true,

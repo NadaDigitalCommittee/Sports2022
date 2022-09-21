@@ -3,7 +3,9 @@
       <Header/>
       <div class="speech">
         <div class="concept">
-          <img src="~/assets/img/forarticle/design.png" alt="デザイン課" class="midasi">
+          <div class="midasi">
+            <img src="~/assets/img/forarticle/design.png" alt="デザイン課" >
+          </div>
           <div class="profile">
             <img src="~/assets/img/forarticle/josuke.png" alt="デザイン課長の顔写真" class="face">
             <div class="names">
@@ -23,11 +25,15 @@
 .speech{
   width: 100vw;
   margin-top: 20px;
-  .midasi{
-    position: relative;
-    left: 10px;
-    height: 40px;
-  }
+.midasi{
+  position: relative;
+  margin: 0 auto;
+  width: calc( min(100vw,max(70% , 600px)) - 60px);
+  height: 40px;
+}
+.midasi img{
+  height: 40px;
+}
   .concept{
     width: min(100vw,max(75vw,600px));
     margin: 0 auto;
@@ -95,16 +101,19 @@
 }
 .aisatu{
   font-size: 16px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: auto;
   padding-right: 15px;
   padding-left:15px;
-  text-align: center;
+  text-align: left;
   width: calc( min(100vw,max(70% , 600px)) - 30px);
+  line-height: 26px;
 }
 </style>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 
 export default Vue.extend({
@@ -124,6 +133,16 @@ export default Vue.extend({
         { hid: 'og:url', name: 'og:url', content: `${url}article/design` },
       ],
     };
+  },
+  mounted() {
+    // font
+    const d = document;
+    const config = {
+      kitId: 'zlv1mor',
+      scriptTimeout: 3000,
+      async: true,
+    };
+    const h = d.documentElement; const t = setTimeout(() => { h.className = `${h.className.replace(/\bwf-loading\b/g, '')} wf-inactive`; }, config.scriptTimeout); const tk = d.createElement('script'); let f = false; const s = d.getElementsByTagName('script')[0]; let a; h.className += ' wf-loading'; tk.src = `https://use.typekit.net/${config.kitId}.js`; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != 'complete' && a != 'loaded') return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) {} }; s.parentNode.insertBefore(tk, s);
   },
   methods: {
   },

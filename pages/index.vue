@@ -24,26 +24,26 @@
         <tbody>
           <tr>
             <th>
-              2002/01/01
+              2022.09.20
             </th>
             <td>
-              adipisicing elit.
+              相撲の予選が行われました
             </td>
           </tr>
           <tr>
             <th>
-              2001/01/01
+              2022.09.17
             </th>
             <td>
-              sit amet consectetur
+              雨天時プログラムが完成しました
             </td>
           </tr>
           <tr>
             <th>
-              2000/01/01
+              2022.09.14
             </th>
             <td>
-              Lorem ipsum dolor
+              パンフレットが完成しました
             </td>
           </tr>
         </tbody>
@@ -51,7 +51,9 @@
     </div>
     <div class="speech">
       <div class="vision">
-        <img src="~/assets/img/vision.png" alt="vision" class="midasi">
+        <div class="midasi">
+        <img src="~/assets/img/vision.png" alt="vision">
+        </div>
         <div class="profile">
           <img src="~/assets/img/ikedafull.png" alt="体育委員長の写真" class="face">
           <div class="names">
@@ -85,25 +87,25 @@
 
 #id1{
   position: relative;
-  left: calc( 50vw - ( 45vh * 175 / 337 ) );
-  width: calc( 45vh * 349 / 337);
-  height: 45vh;
+  left: calc( 50vw - ( min(45vh,90vw) * 175 / 337 ) + 1.5vh);
+  width: calc( min(45vh,90vw) * 349 / 337);
+  height: min(45vh,90vw);
   resize: none;
 }
 #id2{
   position: relative;
-  left: calc(50vw - ( 45vh * 235 / 337 ));
-  top: calc( 0vh -  45vh * 30 / 337  );
-  width: calc( 45vh * 34 / 337);
-  height: calc( 45vh * 305 / 337);
+  left: calc(50vw - ( min(45vh,90vw) * 235 / 337 ) + 1.5vh);
+  top: calc( 0vh -  min(45vh,90vw) * 30 / 337  );
+  width: calc( min(45vh,90vw) * 34 / 337);
+  height: calc( min(45vh,90vw) * 305 / 337);
   z-index: 1;
 }
 #id3{
   position: relative;
-  left: calc(50vw - ( 45vh * 535 / 337 ));
-  top: calc( 45vh * 95 / 337 );
-  width: calc( 45vh * 34 / 337 );
-  height: calc( 45vh * 180 / 337 );
+  left: calc(50vw - ( min(45vh,90vw) * 535 / 337 ) + 1.5vh);
+  top: calc( min(45vh,90vw) * 95 / 337 );
+  width: calc( min(45vh,90vw) * 34 / 337 );
+  height: calc( min(45vh,90vw) * 180 / 337 );
   z-index: 1;
 }
 
@@ -170,6 +172,10 @@
   margin-bottom: 30px;
 }
 .news{
+  
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
     display: flex;
     justify-content: center;
   table{
@@ -216,6 +222,12 @@
   margin-top: 50px;
   width: 100vw;
   .midasi{
+  margin: auto;
+  padding-right: 15px;
+  padding-left:15px;
+  width: calc( min(100vw,max(50% , 600px)) - 30px);
+  }
+  .midasi img{
     height: 50px;
   }
   .vision{
@@ -293,11 +305,14 @@
 }
 .aisatu{
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: yu-gothic-pr6n,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: auto;
   padding-right: 15px;
   padding-left:15px;
-  text-align: center;
+  text-align: left;
+  line-height: 26px;
   width: calc( min(100vw,max(50% , 600px)) - 30px);
 }
 
