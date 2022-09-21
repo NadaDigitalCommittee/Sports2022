@@ -134,7 +134,7 @@ export default Vue.extend({
   data() {
     return {
       MenuOpened: false,
-      imgsrc: require('~/assets/img/menuclosed.png'),
+      imgsrc: require('~/assets/img/menuclosed.svg'),
     };
   },
   mounted() {
@@ -150,7 +150,7 @@ export default Vue.extend({
   methods: {
     hbClick() {
       this.MenuOpened = !this.MenuOpened;
-      this.imgsrc = this.MenuOpened ? require('~/assets/img/menuopened.png') : require('~/assets/img/menuclosed.png');
+      this.imgsrc = this.MenuOpened ? require('~/assets/img/menuopened.svg') : require('~/assets/img/menuclosed.svg');
     },
   },
 });

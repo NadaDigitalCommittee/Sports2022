@@ -3,8 +3,8 @@
     <Header/>
     <div class="theme">
       <img id="id1" src="~/assets/img/fixedlogo.png"  alt="体育祭テーマロゴ"/>
-      <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.png"  alt="新たな体育祭を"/>
-      <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.png"  alt="開拓する"/>
+      <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.svg"  alt="新たな体育祭を"/>
+      <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.svg"  alt="開拓する"/>
     </div>
     <div class="timer hidden" :class="{show:ActivateTime}">
       <b class = "made">第93回灘校体育祭まで</b>
@@ -51,9 +51,9 @@
     </div>
     <div class="speech">
       <div class="vision">
-        <div class="midasi">
-        <img src="~/assets/img/vision.png" alt="vision">
-        </div>
+          <div class="midasi">
+            <p class="midasitext"><span class="changecolor">V</span>ision<span class="changesize">▶︎▶︎▶︎▶︎▶︎</span></p>
+          </div>
         <div class="profile">
           <img src="~/assets/img/ikedafull.png" alt="体育委員長の写真" class="face">
           <div class="names">
@@ -78,6 +78,19 @@
 </template>
 
 <style scoped lang="scss">
+  .midasitext{
+    font-family: garamond-premier-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    .changecolor{
+      color: #FF4E00;
+    }
+    .changesize{
+      margin-left: 15px;
+      font-size: 10px;
+    }
+  }
 .theme{
   position: relative;
   padding-bottom: 2vh;
