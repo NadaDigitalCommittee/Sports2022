@@ -182,6 +182,7 @@
       .year{
         text-align: center;
         font-size: min(12px,4vw);
+        margin: 5px 0;
       }
       .name{
         text-align: center;
