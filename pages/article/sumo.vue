@@ -2,14 +2,102 @@
   <div class="bg">
     <Header/>
     <div class="naiyou">
-      <img src="~/assets/img/forarticle/sumo.svg" alt="" class="midasi">
+      <img src="~/assets/img/forarticle/sumo.png" alt="" class="midasiimg">
       <div class="rikisi">
         <p class="itirann midasi">力士一覧</p>
         <div class="kessyou">
           <p class="midasi">決勝トーナメント進出者</p>
+          <p class="inside">お楽しみに!</p>
         </div>
         <div class="best16">
           <p class="midasi">ベスト16</p>
+          <div class="all">
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle14_蒼空.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">蒼空</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle12_メイウェザー.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">メイウェザー</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle4_キャサリン.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">キャサリン</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle7_石塚雅.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">石塚雅</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle3_体育委員長.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">体育委員長</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle6_Mr.灘.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">Mr.灘</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle8_金紗沙.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">金紗沙</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle9_ナナヒカリ.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">ナナヒカリ</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle5_アブ丸.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">アブ丸</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle13_めし山ゴンザレス.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">めし山ゴンザレス</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle11_ピカのチュウ.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">ピカのチュウ</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle2_小倉マッスルマン.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">小倉マッスルマン</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle15_疾風.jpg" alt="">
+                <p class="year">高校一年</p>
+                <p class="name">疾風</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle10_どろぼう.jpg" alt="">
+                <p class="year">不明</p>
+                <p class="name">どろぼう</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle1_なぎこ.jpg" alt="">
+                <p class="year">不明</p>
+                <p class="name">なぎこ</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -24,7 +112,10 @@
     width: min(95vw,max(70vw,600px));
     margin:0 auto;
     margin-top: 15px;
-
+    
+    .midasiimg{
+      height: 40px;
+    }
   }
   .rikisi{
     position: relative;
@@ -41,26 +132,70 @@
       font-size: min(25px,8vw);
     }
     .kessyou{
+      .midasi{
       margin: 10px 0;
       width: 80%;
       margin-left: 10%;
       border-bottom-color: black;
       border-bottom-width: 1px;
+      }
+      .inside{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
     .best16{
+      .midasi{
       margin: 10px 0;
       width: 80%;
       margin-left: 10%;
       border-bottom-color: black;
       border-bottom-width: 1px;
+
+      }
     }
     .midasi{
-      width: 100%;
+    width: 100%;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: min(20px,6.4vw);
     }
+  }
+  .all{
+    
+    width: 80%;
+      margin-left: 10%;
+  }
+  .all{
+    .each{
+        text-align: center;
+      margin: 10px;
+      width: max(25vw,92px);
+      img{
+        border-color: #ffc400;
+        border-radius:50% ;
+        border-width: 3px;
+        width: 92px;
+      }
+      .year{
+        text-align: center;
+        font-size: min(12px,4vw);
+      }
+      .name{
+        text-align: center;
+        width: 100%;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: min(14px,4.5vw);
+      }
+    }
+  }
+  .row{
+    display: flex;
+    justify-content: center;
   }
 </style>
 
