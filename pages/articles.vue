@@ -13,7 +13,7 @@
               <p>引率課</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
-              <img src="~/assets/img/forarticle/leadphoto.png" alt="" class="photo">
+              <img src="~/assets/img/forarticle/leadphoto_2x.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/judge')" class="link">
               <p>体育委員会各課紹介</p>
@@ -21,7 +21,7 @@
                 <p>審判課</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
-              <img src="~/assets/img/forarticle/judgephoto.png" alt="" class="photo">
+              <img src="~/assets/img/forarticle/judgephoto_2x.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/delivery')" class="link">
               <p>体育委員会各課紹介</p>
@@ -51,7 +51,7 @@
                 <p>相撲特集</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
-              <img src="~/assets/img/forarticle/sumophoto.png" alt="" class="photo">
+              <img src="~/assets/img/forarticle/sumophoto_2x.png" alt="" class="photo">
             </div>
             <div @click="$router.push('/article/cheer')" class="link tokusyu">
               <p>体育祭当日</p>
@@ -59,7 +59,7 @@
                 <p>応援団特集</p>
               <img src="~/assets/img/yajirusi.png" alt="">
               </div>
-              <img src="~/assets/img/forarticle/cheerphoto.png" alt="" class="photo">
+              <img src="~/assets/img/forarticle/cheerphoto_2x.png" alt="" class="photo">
             </div>
           </div>
         </div>

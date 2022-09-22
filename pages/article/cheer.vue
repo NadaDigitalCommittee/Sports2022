@@ -6,12 +6,12 @@
         <p class="midasitext"><span class="changecolor">応</span>援団特集</p>
       </div>
       <br/>
-      <img src="~/assets/img/forarticle/cheer_top.png" alt="" class="full">
+      <img src="~/assets/img/forarticle/cheer_top_2x.png" alt="" class="full">
       <div class="aisatu">
         <p class="title">団長挨拶</p>
         <p class="nakami">１組団長の能松です。今回は全クラス合同となり、対決では無くなってしまいましたが、その分多くの人が集まり、大迫力の演技を見せられると思うので期待していて下さい！<br/><br/>２組団長の宅見悠作です！扇子や人数の多さを活かしたダイナミックな演舞を披露できるよう日々練習に取り組んできたのでぜひ見てください！</p>
       </div>
-      <img src="~/assets/img/forarticle/cheer_2.png" alt="" class="full2">
+      <img src="~/assets/img/forarticle/cheer_2_2x.png" alt="" class="full2">
       <div class="aisatu">
         <p class="nakami">
           ３組団長の梅本樹弥です。３年目の応援団なので、今まで見てきた先輩方を超えるのを目指して、演舞の構成・内容、Tシャツのデザイン、本番の衣装等々全て考えに考えて最高のものを作り上げてきました！観に来て頂けると幸いです。<br/><br/>４組団長の林慶一郎です。第93代灘校応援団は全組合同で、青い衣装をまとい龍をモチーフにした演舞を披露します。体育祭全体の成功を祈願し、力強さと繊細さで、観る人を魅了します！

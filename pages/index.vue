@@ -55,7 +55,7 @@
             <p class="midasitext"><span class="changecolor">V</span>ision<span class="changesize">▶︎▶︎▶︎▶︎▶︎</span></p>
           </div>
         <div class="profile">
-          <img src="~/assets/img/ikedafull.png" alt="体育委員長の写真" class="face">
+          <img src="~/assets/img/ikedafull_2x.png" alt="体育委員長の写真" class="face">
           <div class="names">
             <p class="role">体育委員長</p>
             <div class="pl"/>
