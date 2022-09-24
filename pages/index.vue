@@ -6,7 +6,7 @@
       <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.svg"  alt="新たな体育祭を"/>
       <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.svg"  alt="開拓する"/>
     </div>
-    <p class="live">ライブ配信準備中</p>
+    <p class="live">ライブ配信実施中！！</p>
     <div class="points">
       <table class="table">
         <thead>
