@@ -6,11 +6,65 @@
       <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.svg"  alt="新たな体育祭を"/>
       <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.svg"  alt="開拓する"/>
     </div>
-    <div class="timer hidden" :class="{show:ActivateTime}">
-      <b class = "made">第93回灘校体育祭まで</b>
-      <div class="ato">
-        <p>あと</p><p id = "daycount">{{ day }}</p><p>日</p>
-      </div>
+    <p class="live">ライブ配信実施中</p>
+    <div class="points">
+      <table class="table">
+        <thead>
+          <tr>
+            <td colspan="2">
+              <p>
+                得点状況
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="class c1">
+              <p>
+              1組
+              </p>
+            </td>
+            <td class="point">
+              <p v-if="!sum.pointIsHidden">{{sum.scores[0]}}</p>
+              <p v-else>???</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="class c2">
+              <p>
+              2組
+              </p>
+            </td>
+            <td class="point">
+              <p v-if="!sum.pointIsHidden">{{sum.scores[1]}}</p>
+              <p v-else>???</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="class c3">
+              <p>
+              3組
+              </p>
+            </td>
+            <td class="point">
+              <p v-if="!sum.pointIsHidden">{{sum.scores[2]}}</p>
+              <p v-else>???</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="class c4">
+              <p>
+              4組
+              </p>
+            </td>
+            <td class="point">
+              <p v-if="!sum.pointIsHidden">{{sum.scores[3]}}</p>
+              <p v-else>???</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="news">
       <table>
@@ -78,6 +132,83 @@
 </template>
 
 <style scoped lang="scss">
+.live{
+  font-size: min(16px , 2.4vh);
+  font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  background-color: #FF4E00;
+  width:calc( min(100vw,800px) + 10px);
+  position: relative;
+    left: -5px;
+  text-align: center;
+  margin: auto;
+  padding: 8px 0;
+}
+.points{
+  margin: auto;
+  background-color: #e9e9e9;
+  width: calc( min(100vw,800px) + 10px);
+  position: relative;
+  left: -5px;  
+  font-size: min(16px , 2.4vh);
+  font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  padding: 10px 0;
+
+  table{
+    width: 80%;
+    margin: auto;
+    border-spacing: 6px 6px;
+    td{
+      margin: auto 10px;
+    }
+    thead{
+      td{
+        font-size: min( 18px , 2.7vh);
+        text-align: center;
+        p{
+        margin:8px auto;
+
+        }
+      }
+    }
+    .c1{
+      background-color: #000;
+      color: #FFFFFF;
+    }
+    .c2{
+      background-color: #e33b3b;
+      color: white;
+    }
+    .c3{
+      background-color: #ffe557;
+      color: black;
+    }
+    .c4{
+      background-color: #2e7d00;
+      color: white;
+    }
+    .class{
+      width: 15%;
+      padding: 14px 0;
+      text-align: center;
+    }
+    .point{
+      width: 85%;
+      background-color: white;
+      text-align: center;
+      
+      p{
+        margin: 14px auto;
+      }
+    }
+  }
+}
+
+
   .midasitext{
     font-family: garamond-premier-pro, serif;
     font-weight: 700;
@@ -344,6 +475,7 @@ export default Vue.extend({
       ActivateKaitaku: false,
       ActivateAratana2: false,
       ActivateKaitaku2: false,
+      sum: { scores: [0, 0, 0, 0], pointIsHidden: true },
     };
   },
   head() {
@@ -415,7 +547,17 @@ export default Vue.extend({
       } catch (e) { }
     };
     s.parentNode.insertBefore(tk, s);
+    
+    this.requestsum();
   },
-  methods: {},
+  methods: {
+    async requestsum() {
+      // @ts-ignore
+      this.sum = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/sum', {
+        headers: { 'Content-Type': 'application/json' },
+        data: {},
+      }));
+    },
+  },
 });
 </script>
