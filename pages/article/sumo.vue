@@ -6,8 +6,50 @@
       <div class="rikisi">
         <p class="itirann midasi">力士一覧</p>
         <div class="kessyou">
-          <p class="midasi">決勝トーナメント進出者</p>
-          <p class="inside">お楽しみに!</p>
+          <p class="midasi">決勝トーナメント進出者</p><div class="all">
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle4_キャサリン.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">キャサリン</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle1_なぎこ.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">なぎこ</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle9_ナナヒカリ.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">ナナヒカリ</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle5_アブ丸.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">アブ丸</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle13_めし山ゴンザレス.jpg" alt="">
+                <p class="year">高校二年</p>
+                <p class="name">めし山ゴンザレス</p>
+              </div>
+              <div class="each">
+                <img src="~/assets/img/forarticle/sumoface/circle12_メイウェザー.jpg" alt="">
+                <p class="year">高校三年</p>
+                <p class="name">メイウェザー</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/no_image_square.jpg" alt="">
+                <p class="year">不明</p>
+                <p class="name">きのこの山</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="best16">
           <p class="midasi">ベスト16</p>
@@ -72,7 +114,7 @@
               <div class="each">
                 <img src="~/assets/img/forarticle/sumoface/circle11_ピカのチュウ.jpg" alt="">
                 <p class="year">高校二年</p>
-                <p class="name">ピカのチュウ</p>
+                <p class="name">ピカチュウ</p>
               </div>
               <div class="each">
                 <img src="~/assets/img/forarticle/sumoface/circle2_小倉マッスルマン.jpg" alt="">
@@ -95,6 +137,13 @@
                 <img src="~/assets/img/forarticle/sumoface/circle15_疾風.jpg" alt="">
                 <p class="year">高校一年</p>
                 <p class="name">疾風</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="each">
+                <img src="~/assets/img/no_image_square.jpg" alt="">
+                <p class="year">不明</p>
+                <p class="name">きのこの山</p>
               </div>
             </div>
           </div>
