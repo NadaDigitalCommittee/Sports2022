@@ -6,14 +6,14 @@
       <img id="id2" class="hidden" :class="{show2:ActivateAratana,disableanime:ActivateAratana2}" src="~/assets/img/aratana.svg"  alt="新たな体育祭を"/>
       <img id="id3" class="hidden" :class="{show3:ActivateKaitaku,disableanime:ActivateKaitaku2}" src="~/assets/img/kaitaku.svg"  alt="開拓する"/>
     </div>
-    <p class="live">ライブ配信実施中！！</p>
+    <p class="live">ライブ配信は終了しました</p>
     <div class="points">
       <table class="table">
         <thead>
           <tr>
             <td colspan="2">
               <p>
-                得点状況（中高合計）
+                最終得点（中高合計）
               </p>
             </td>
           </tr>
@@ -464,6 +464,11 @@
 
 <script>
 import Vue from 'vue';
+// @ts-ignore
+import scoredata from '~/assets/score.json';
+// @ts-ignore
+import sumdata from '~/assets/sum.json';
+
 
 export default Vue.extend({
   name: 'Index',
@@ -553,10 +558,7 @@ export default Vue.extend({
   methods: {
     async requestsum() {
       // @ts-ignore
-      this.sum = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/sum', {
-        headers: { 'Content-Type': 'application/json' },
-        data: {},
-      }));
+      this.sum = sumdata;
     },
   },
 });

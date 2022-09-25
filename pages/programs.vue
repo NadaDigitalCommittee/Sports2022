@@ -176,6 +176,10 @@
 
 <script lang="ts">
 import Vue from 'vue';
+// @ts-ignore
+import scoredata from '~/assets/score.json';
+// @ts-ignore
+import sumdata from '~/assets/sum.json';
 
 export default Vue.extend({
   name: 'programs',
@@ -216,10 +220,7 @@ export default Vue.extend({
   methods: {
     async request() {
       // @ts-ignore
-      this.programs = (await this.$axios.$get('https://apifornada76sportfes.azurewebsites.net/score', {
-        headers: { 'Content-Type': 'application/json' },
-        data: {},
-      }));
+      this.programs = scoredata;
     },
     openDesc(program: object) {
       // @ts-ignore
