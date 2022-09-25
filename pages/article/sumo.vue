@@ -44,8 +44,8 @@
             
             <div class="row">
               <div class="each">
-                <img src="~/assets/img/no_image_square.jpg" alt="">
-                <p class="year">不明</p>
+                <img src="~/assets/img/forarticle/sumoface/circle16_.jpg" alt="">
+                <p class="year">高校二年</p>
                 <p class="name">きのこの山</p>
               </div>
             </div>
@@ -141,8 +141,8 @@
             </div>
             <div class="row">
               <div class="each">
-                <img src="~/assets/img/no_image_square.jpg" alt="">
-                <p class="year">不明</p>
+                <img src="~/assets/img/forarticle/sumoface/circle16_.jpg" alt="">
+                <p class="year">高校二年</p>
                 <p class="name">きのこの山</p>
               </div>
             </div>
