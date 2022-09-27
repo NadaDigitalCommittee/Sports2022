@@ -7,15 +7,15 @@
         <p class="midasitext"><span class="changecolor">フ</span>ィールド課</p>
         </div>
         <div class="profile">
-          <img src="~/assets/img/forarticle/ikeda.png" alt="フィールド課長の顔写真" class="face">
+          <img src="~/assets/img/no_image_square.jpg" alt="フィールド課長の顔写真" class="face">
           <div class="names">
             <p class="role">フィールド課長</p>
             <div class="pl"/>
-            <p class="name">池田高啓</p>
+            <p class="name">I.T</p>
             <div class="pl2"/>
           </div>
         </div>
-        <p class="aisatu">フィールド課では、他の課に配属されない様々な業務を担当します。目立つところでは新競技の考案やプログラムの作成がありますが、用具の発注や合同体育の調整に至るまで、委員長を務める池田を中心に、灘校体育祭を縁の下から支えてきました。<br/>
+        <p class="aisatu">フィールド課では、他の課に配属されない様々な業務を担当します。目立つところでは新競技の考案やプログラムの作成がありますが、用具の発注や合同体育の調整に至るまで、委員長を務めるIを中心に、灘校体育祭を縁の下から支えてきました。<br/>
 体育祭本番は本部テントからフィールド全体の管理と指示を行います。</p>
     </div>
     </div>
@@ -85,6 +85,9 @@ margin-top: 20px;
   img{
     width: 120px;
     height: 120px;
+    border-color: #ffc400;
+    border-radius:50% ;
+    border-width: 3px;
   }
   .names{
     margin-left: 20px;

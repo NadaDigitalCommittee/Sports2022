@@ -108,15 +108,6 @@
           <div class="midasi">
             <p class="midasitext"><span class="changecolor">V</span>ision<span class="changesize">▶︎▶︎▶︎▶︎▶︎</span></p>
           </div>
-        <div class="profile">
-          <img src="~/assets/img/ikedafull_2x.png" alt="体育委員長の写真" class="face">
-          <div class="names">
-            <p class="role">体育委員長</p>
-            <div class="pl"/>
-            <p class="name">池田高啓</p>
-            <div class="pl2"/>
-          </div>
-        </div>
         <p class="aisatu">パンデミックの発生によりこの2年半、校内外で受けた制約は計り知れません。直近2回の体育祭も短縮開催を余儀なくされ、いくつもの競技や企画が廃止となってしまいました。</p>
         <br/>
         <p class="aisatu">今年は、今年こそは、僕たちが憧れた体育祭を復興しよう、熱気を創り出そう、その一心でこれまで準備にあたって来ました。</p>
