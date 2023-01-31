@@ -26,7 +26,7 @@ jobs:
           check-latest: true
 
       - name: Cache node_modules
-        uses: actions/cache@v3
+        uses: actions/cache@v3.2.4
         id: yarn-cache
         with:
           path: ${YARN_CACHE_FOLDER}
